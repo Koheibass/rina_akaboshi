@@ -1,0 +1,101 @@
+.whole {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    font-family: Noto serif JP;
+}
+
+.header {
+    width: 100%;
+    background-color: #ffeeee;
+}
+
+.header__whole {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+}
+
+.header__left {
+    flex: 1 1 0%;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 900;
+}
+
+.header__title {
+    font-family: 'Palatino Linotype', sans-serif;
+    color: #937a43;
+    text-decoration: none;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__icon {
+    display: inline-flex;
+    margin-left: 0.25rem;
+    margin: 5px;
+    padding-top: 5px;
+}
+
+.instagram {
+    display: inline-block;
+    position: relative;
+    padding: 4px;
+}
+
+.youtube {
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+}
+
+.header__button {
+    font-size: .75rem;
+    color: #937a43;
+    display: inline-flex;
+    align-items: center;
+    border-width: 1px;
+    background-image: none;
+    border-color: #937a43;
+    justify-content: center;
+    background-color: transparent;
+    margin-left: 0.5rem;
+    font-weight: 500;
+    padding: 6px 6px;
+    margin: 10px 5px;
+    font-weight: bold;
+    border: solid 1px #a07c43;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.hamburger {
+    width: 30px;
+}
+
+.hamburger__line {
+    position: fixed;
+    margin-top: 7px;
+    margin-left: 4px;
+    width: 20px;
+    height: 1px;
+    background-color: #000;
+}
+
+.hamburger__line--1 {
+    top: 8px;
+}
+
+.hamburger__line--2 {
+    top: 16px;
+}
+
+.hamburger__line--3 {
+    top: 24px;
+}
