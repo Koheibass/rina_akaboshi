@@ -20,7 +20,7 @@
 .header__left {
     flex: 1 1 0%;
     margin-left: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2rem;
     font-weight: 900;
 }
@@ -34,12 +34,13 @@
 .header__right {
     display: flex;
     align-items: center;
+    margin-right: 15px;
 }
 
 .header__icon {
     display: inline-flex;
     margin-left: 0.25rem;
-    margin: 5px;
+    margin: 1px;
     padding-top: 5px;
 }
 
