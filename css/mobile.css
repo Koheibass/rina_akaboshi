@@ -53,13 +53,13 @@
 
 .instagram {
     display: inline-block;
-    padding-top: 7px;
+    padding-top: 10px;
 }
 
 .youtube {
     display: inline-block;
     position: relative;
-    padding-top: 3px;
+    padding-top: 6px;
     padding-left: 5px;
 }
 
