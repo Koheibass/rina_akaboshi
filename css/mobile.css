@@ -138,7 +138,6 @@
     justify-content: center;
     gap: 0.5rem;
     width: 330px;
-
 }
 
 .news__title {
@@ -154,9 +153,123 @@
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
     letter-spacing: .025em;
-
 }
 
 .top__news {
     text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.topix {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.info {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.translate {
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.translate::before {
+    border-top: solid 1px #9d8566;
+    border-bottom: solid 2px #9d8566;
+    width: calc(50% - 2rem);
+    height: 5px;
+    top: calc(50% - 2.5px);
+    position: absolute;
+    left: 0;
+    content: "";
+}
+
+.translate::after {
+    border-top: solid 1px #9d8566;
+    border-bottom: solid 2px #9d8566;
+    width: calc(50% - 2rem);
+    height: 5px;
+    top: calc(50% - 2.5px);
+    position: absolute;
+    right: 0;
+    content: "";
+}
+
+.info_content {
+    display: grid;
+    margin-bottom: 1rem;
+}
+
+.info_content_days {
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.info_detail {
+    display: block;
+    text-decoration-line: underline;
+}
+
+.play-movie {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.top-movie {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.top-tracklist {
+    text-align: center;
+    font-size: .75rem;
+    line-height: 1rem;
+    padding-bottom: 1rem;
+}
+
+.top__button {
+    text-align: center;
+}
+
+.top__button__content {
+    font-size: .75rem;
+    line-height: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-width: 1px;
+    border-radius: 0.25rem;
+    display: inline-block;
+    cursor: pointer;
+    background-image: none;
+    text-transform: none;
+    background-color: transparent;
+
 }
