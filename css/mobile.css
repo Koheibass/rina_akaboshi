@@ -3,7 +3,9 @@
     flex-direction: column;
     position: relative;
     min-height: 100vh;
-    font-family: Noto serif JP;
+    font-family: 'メイリオ', Meiryo, serif;
+
+
 }
 
 .header {
@@ -157,10 +159,12 @@
 
 .top__news {
     text-decoration: none;
+    color: #937a43;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .topix {
@@ -191,8 +195,8 @@ a {
 .translate::before {
     border-top: solid 1px #9d8566;
     border-bottom: solid 2px #9d8566;
-    width: calc(50% - 2rem);
-    height: 5px;
+    width: calc(50% - 3rem);
+    height: 2px;
     top: calc(50% - 2.5px);
     position: absolute;
     left: 0;
@@ -202,8 +206,8 @@ a {
 .translate::after {
     border-top: solid 1px #9d8566;
     border-bottom: solid 2px #9d8566;
-    width: calc(50% - 2rem);
-    height: 5px;
+    width: calc(50% - 3rem);
+    height: 2px;
     top: calc(50% - 2.5px);
     position: absolute;
     right: 0;
@@ -260,6 +264,104 @@ a {
 .top__button__content {
     font-size: .75rem;
     line-height: 1rem;
+    color: #937a43;
+    display: inline-flex;
+    align-items: center;
+    border-width: 1px;
+    background-image: none;
+    border-color: #937a43;
+    justify-content: center;
+    background-color: transparent;
+    margin-left: 0.5rem;
+    font-weight: 500;
+    padding: 6px 6px;
+    margin: 1px 5px;
+    font-weight: bold;
+    border: solid 1px #a07c43;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.biography__title {
+    line-height: 1;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin: 0;
+
+}
+
+.biography__name {
+    margin-top: 0.5rem;
+}
+
+.biography__name__japanese {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.biography__name__alphabet {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.biography__button {
+    justify-content: center;
+    display: flex;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.biography__button__japanese {
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-width: 1px;
+    --tw-text-opacity: 1;
+    color: rgb(236 72 153 / var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 238 238 / var(--tw-bg-opacity));
+    --tw-border-opacity: 1;
+    border-color: rgb(236 72 153 / var(--tw-border-opacity));
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.biography__button__english {
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-width: 1px;
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+button {
+    cursor: pointer;
+    background-image: none;
+    text-transform: none;
+    background-color: transparent;
+}
+
+.main__profile {
+    max-width: none;
+}
+
+.biography__detail {
+    font-size: .75rem;
+    line-height: 1rem;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
     padding-left: 0.5rem;
@@ -267,9 +369,4 @@ a {
     border-width: 1px;
     border-radius: 0.25rem;
     display: inline-block;
-    cursor: pointer;
-    background-image: none;
-    text-transform: none;
-    background-color: transparent;
-
 }
