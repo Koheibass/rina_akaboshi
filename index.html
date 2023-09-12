@@ -62,7 +62,7 @@
                     <div>
                         <h3 class="info">
                             <div>最新情報</div>
-                            <div class="translate">updates</div>
+                            <div class="translate__another">updates</div>
                         </h3>
                         <div class="info_content">
                             <div class="info_content_days">
@@ -80,7 +80,7 @@
                     <div>
                         <h3 class="play-movie">
                             <div>演奏動画</div>
-                            <div class="translate">Movies</div>
+                            <div class="translate__another">Movies</div>
                         </h3>
                         <div>
                             <iframe class="top-movie" width="100%" height="100%"
@@ -102,7 +102,7 @@
                 </div>
             </section>
             <section class="section_biography" C id="biography">
-                <h2 class="biography__title">
+                <h2 class="element__title">
                     <div>プロフィール</div>
                     <div class="translate">Biography</div>
                 </h2>
@@ -138,18 +138,21 @@
                 </div>
             </section>
             <section class="section_concerts" id="concerts">
-                <h2 class="concerts__title">
+                <h2 class="element__title">
                     <div>コンサート</div>
                     <div class="translate">Concert</div>
                 </h2>
                 <div class="concerts__selector">
                     <div class="concerts__button">
-                        <button class="upcomming__button">Upcomming</button>
+                        <button class="upcoming__button">Upcoming</button>
                         <button class="past__button">Past</button>
                     </div>
                     <div class="concerts__content">
                         <div>
-                            <div class="concert-days">2021.06.19 YouTube / イマチケ</div>
+                            <div>
+                                <span class="concert-days">2021.06.19</span>
+                                <span class="concert-detail">YouTube / イマチケ</span>
+                            </div>
                             <a href="concert1.html" class="concert-update">赤星 里奈 ピアノリサイタル vol.1 presented by
                                 "MUSICUM"</a>
                         </div>
@@ -160,7 +163,7 @@
                 </div>
             </section>
             <section class="section_media" id="media">
-                <h2 class="media__title">
+                <h2 class="element__title">
                     <div>メディア</div>
                     <div class="translate">Media</div>
                 </h2>
@@ -168,42 +171,48 @@
                     <button class="movie-button">動画</button>
                     <button class="photo-button">写真</button>
                 </div>
-                <div class="media__list">
-                    <div>
-                        <iframe class="movie2" width="300" height="200" src="https://www.youtube.com/embed/4Tr9Y_rOfh4"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                        <div class="individual-videos">ベートーヴェン：ピアノソナタ第26番「告別」op.81a</div>
+                <div class="media__content">
+                    <div class="media__list">
+                        <div>
+                            <iframe class="indivisual-movie" width="100%" height="auto"
+                                src="https://www.youtube.com/embed/4Tr9Y_rOfh4" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <div class="individual-videos">ベートーヴェン：ピアノソナタ第26番「告別」op.81a</div>
+                        </div>
+                        <div>
+                            <iframe class="indivisual-movie" width="100%" height="auto"
+                                src="https://www.youtube.com/embed/n-B9BzPxbzk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <div class="individual-videos">シューマン＝リスト : 献呈</div>
+                        </div>
+                        <div>
+                            <iframe class="indivisual-movie" width="100%" height="auto"
+                                src="https://www.youtube.com/embed/IkZB4TZtUAM" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <div class="individual-videos">ショパン：練習曲集op.10よりNo.5「黒鍵」</div>
+                        </div>
+                        <div>
+                            <iframe class="indivisual-movie" width="100%" height="auto"
+                                src="https://www.youtube.com/embed/66Fel4dySJ8" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <div class="individual-videos">シューベルト：即興曲　第3番　D899 op.90-3 変ト長調</div>
+                        </div>
                     </div>
-                    <div>
-                        <iframe class="movie2" width="300" height="200" src="https://www.youtube.com/embed/n-B9BzPxbzk"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                        <div class="individual videos">シューマン＝リスト : 献呈</div>
-                    </div>
-                    <div>
-                        <iframe class="movie2" width="300" height="200" src="https://www.youtube.com/embed/IkZB4TZtUAM"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                        <div class="individual videos">ショパン：練習曲集op.10よりNo.5「黒鍵」</div>
-                    </div>
-                    <div>
-                        <iframe class="movie2" width="300" height="200" src="https://www.youtube.com/embed/66Fel4dySJ8"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                        <div class="individual videos">シューベルト：即興曲　第3番　D899 op.90-3 変ト長調</div>
-                    </div>
+                    <button class="more-videos">
+                        <a href="media/videos1.html">> もっと見る</a>
+                    </button>
                 </div>
-                <button class="more-videos">
-                    <a href="media/videos1.html">> もっと見る</a>
-                </button>
             </section>
             <section class="section_recordings" id="recordings">
-                <h2 class="recordings__title">
+                <h2 class="element__title">
                     <div>CD</div>
                     <div class="translate">Recordings</div>
                 </h2>
@@ -212,9 +221,9 @@
                         <img src="NeueWelt1.webp" class="recordings__photo" width="100%">
                     </div>
                     <div class="cd__content">
-                        <h3>Neue Welt 〜新しい世界〜</h3>
-                        <p>2018年1月11日 リリース<br>¥ 3,300 (税込) + 送料</p>
-                        <p>ドイツで録音された珠玉のCD。
+                        <h3 class="cd__title">Neue Welt 〜新しい世界〜</h3>
+                        <p class="cd__days">2018年1月11日 リリース<br>¥ 3,300 (税込) + 送料</p>
+                        <p class="cd__content">ドイツで録音された珠玉のCD。
                             <br>ドイツの空気の中に響く美しい音色を是非お楽しみください。
                         </p>
                         <div class="recorded-music">
@@ -224,6 +233,7 @@
                                 <ul class="recorded-music-list">
                                     <li class="recorded-music-list__content">
                                         J.S.バッハ
+                                        <br>
                                         平均律クラヴィーア曲集第Ⅱ巻より 第9番 ホ長調 BWV878
                                     </li>
                                     <li class="recorded-music-list__content">
@@ -239,14 +249,17 @@
                                 </ul>
                             </div>
                             <br>
-                            "録音: 2017年4月27日 Barocksaal Rostock, Deutschland "
+                            "録音: 2017年4月27日
+                            <br>Barocksaal Rostock, Deutschland "
                         </div>
-                        <button href="order1.html" class="recordings__button">🛒 CDを購入</button>
+                        <button class="recordings__button">
+                            <a href="https://rinaakaboshi.official.ec/items/65023901">CDを購入</a>
+                        </button>
                     </div>
                 </div>
             </section>
             <section class="section_contact" id="contact">
-                <h2 class="contact__title">
+                <h2 class="element__title">
                     <div>お問い合わせ</div>
                     <div class="translate">contact</div>
                 </h2>
@@ -254,27 +267,28 @@
                     <div class="contact__annotation">ピアニスト 赤星里奈へのご依頼・お問い合わせなどは、こちらからお願い致します。</div>
                     <form action="/api/hello" method="get" novalidate id="contact-form" class="contact-form">
                         <div>
-                            <label for="name">お名前</label>
-                            <input class="contact__name" id="name" name="name">
-                            <div class="required">必須</div>
+                            <label for="name" class="contact-form">お名前</label>
+                            <input class="contact__frame" id="name" name="name">
+                            <br>
                         </div>
                         <div>
-                            <label for="email">メールアドレス</label>
-                            <input class="contact__email" id="email" name="email">
-                            <div class="required">必須</div>
+                            <label for="email" class="contact-form">メールアドレス</label>
+                            <input class="contact__frame" id="email" name="email">
+                            <br>
                         </div>
                         <div>
-                            <label class="contact-form-type" for="contact-form-type">お問い合わせの種別</label>
-                            <select name="type">
+                            <label class="contact-form" for="contact-form-type">お問い合わせの種別</label>
+                            <select name="type" class="contact__frame__type">
                                 <option value="playrequest">演奏依頼</option>
                                 <option value="request">企業からのご依頼</option>
                                 <option value="others">その他</option>
                             </select>
+                            <br>
                         </div>
                         <div>
-                            <label for="message">お問い合わせの内容</label>
-                            <textarea class="contact__message" id="message" name="message"></textarea>
-                            <div class="required">必須</div>
+                            <label for="message" class="contact-form">お問い合わせの内容</label>
+                            <textarea class="contact__frame__message" id="message" name="message"></textarea>
+                            <br>
                         </div>
                         <button class="contact__button" type="submit" data-comform-touched="true">送信</button>
                     </form>
@@ -284,10 +298,10 @@
         <div class="footer">
             <div class="footer__content">
                 <a href="https://www.instagram.com/akaboshi_rina/">
-                    <img src="Instagram.svg" class="icon3" width="30" height="30" alt="twitter">
+                    <img src="Instagram.svg" class="footer__instagram" width="30" height="30" alt="twitter">
                 </a>
                 <a href="https://www.youtube.com/@akaboshirina">
-                    <img src="YouTube.svg" class="icon4" width="40" height="40" alt="YouTube">
+                    <img src="YouTube.svg" class="footer__youtube" width="40" height="40" alt="YouTube">
                 </a>
             </div>
             <div class="lisence">© 2023 Rina Akaboshi</div>
