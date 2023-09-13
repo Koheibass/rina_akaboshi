@@ -70,6 +70,7 @@
                                 <small>(Sat)</small>
                             </div>
                             <a href="updates2.html" class="info_detail">カルチャーメディア誌「Bridge」に掲載されました。</a>
+                            <br>
                             <div class="info_content_days">
                                 "2021.05.31"
                                 <small>(Mon)</small>
@@ -95,7 +96,7 @@
                         </div>
                         <div class="top__button">
                             <button class="top__button__content">
-                                <a href="media/videos1.html">> もっと見る</a>
+                                <a href="videos.html">> もっと見る</a>
                             </button>
                         </div>
                     </div>
@@ -131,9 +132,12 @@
                                 現在は自身の演奏に関する研究活動や後進の育成とともに、クラシック音楽界に貢献すべく活動の幅を広げている。
                             </p>
                         </div>
-                        <button class="biography__detail">
-                            <a href="biography.html">詳細</a>
-                        </button>
+                        <br>
+                        <div>
+                            <button class="biography__button__content">
+                                <a href="biography.html">詳細</a>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -206,9 +210,12 @@
                             <div class="individual-videos">シューベルト：即興曲　第3番　D899 op.90-3 変ト長調</div>
                         </div>
                     </div>
-                    <button class="more-videos">
-                        <a href="media/videos1.html">> もっと見る</a>
-                    </button>
+                    <br>
+                    <div class="top__button">
+                        <button class="top__button__content">
+                            <a href="videos.html">> もっと見る</a>
+                        </button>
+                    </div>
                 </div>
             </section>
             <section class="section_recordings" id="recordings">
@@ -307,6 +314,24 @@
             <div class="lisence">© 2023 Rina Akaboshi</div>
         </div>
     </div>
+    <script>
+        const japaneseProfile = `クラシック音楽を専門とするピアニスト。特にドイツ音楽に造詣が深いが、近年ではフランス音楽やロシア音楽にも研究心を持ち、レパートリーと表現の幅を拡げている。
+                円熟した表現と音楽性を深く追求した演奏に定評があり、響きの新しい可能性を探求するために奏法を研究し続けている。
+                2018 年に初のソロアルバム「Neue Welt ～新しい世界～」をリリース。
+                現在は自身の演奏に関する研究活動や後進の育成とともに、クラシック音楽界に貢献すべく活動の幅を広げている。`;
+        const englishProfile = `Rina Akaboshi is a classical concert pianist. Although her forte is German music, her recent focus has been on broadening her repertoire with French and Russian music. She has a reputation for pursuing a mature expression and deep musicality, while exploring techniques in-depth to discover the ideal touch to bring out new possibilities in every tone.
+    After receiving numerous awards in both national and international competitions, in 2018, her first solo album, “Neue Welt – New World” was released. Her concert activities continue while studying under Mr. Yuya Tsuda, one of the most appreciated pianists in Japan, at Tokyo Art University (Graduate-level special course).`;
+
+        function switchToJapanese() {
+            document.getElementById("profile").innerHTML = japaneseProfile;
+            document.getElementById("profile").classList = "japanese";
+        }
+
+        function switchToEnglish() {
+            document.getElementById("profile").innerHTML = englishProfile;
+            document.getElementById("profile").classList = "english";
+        }
+    </script>
 </body>
 
 </html>
