@@ -3,7 +3,7 @@
     flex-direction: column;
     position: relative;
     min-height: 100vh;
-    font-family: 'メイリオ', Meiryo, serif;
+    font-family: 'Noto Serif JP', serif;
 }
 
 .header {
@@ -132,12 +132,12 @@
 .news {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1rem;
+    margin-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    width: 330px;
+    width: 350px;
 }
 
 .news__title {
@@ -178,6 +178,8 @@ a {
     line-height: 1;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    color: #937a43;
+
 }
 
 .translate {
@@ -188,6 +190,7 @@ a {
     box-sizing: border-box;
     position: relative;
     text-transform: capitalize;
+    font-family: 'Parisienne', cursive;
 }
 
 .translate::before {
@@ -220,6 +223,7 @@ a {
     box-sizing: border-box;
     position: relative;
     text-transform: capitalize;
+    font-family: 'Parisienne', cursive;
 }
 
 .translate__another::before {
@@ -267,6 +271,7 @@ a {
     line-height: 1;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    color: #937a43;
 }
 
 .top-movie {
@@ -320,11 +325,13 @@ a {
     padding-top: 3rem;
     padding-bottom: 2rem;
     margin: 0;
+    color: #937a43;
 
 }
 
 .biography__name {
     margin-top: 0.5rem;
+    color: #937a43;
 }
 
 .biography__name__japanese {
@@ -335,6 +342,7 @@ a {
 .biography__name__alphabet {
     font-size: 1.125rem;
     line-height: 1.75rem;
+    font-family: 'Parisienne', cursive;
 }
 
 .biography__button {
@@ -384,6 +392,7 @@ button {
     background-image: none;
     text-transform: none;
     background-color: transparent;
+    font-family: inherit;
 }
 
 .main__profile {
@@ -591,6 +600,7 @@ button {
 .cd__content {
     margin-top: 1rem;
     margin: 0;
+    color: #937a43;
 }
 
 .recorded-music {
@@ -627,6 +637,7 @@ b {
     background-color: #fcafaf;
     border-radius: 0.5rem;
     width: 50%;
+    color: #ffffff;
     margin: auto;
 }
 
@@ -638,12 +649,14 @@ b {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color: #937a43;
 }
 
 .contact-form {
     gap: 1rem;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     display: grid;
+    color: #937a43;
 }
 
 .contact-form {
@@ -673,6 +686,7 @@ b {
     height: 2rem;
     display: flex;
     margin: auto;
+    color: #937a43;
 }
 
 .contact__frame__message {
@@ -698,6 +712,7 @@ b {
     background-color: #fcafaf;
     border-radius: 0.5rem;
     width: 100%;
+    color: #ffffff;
 }
 
 .footer {
