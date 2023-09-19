@@ -352,7 +352,7 @@ a {
     margin-bottom: 0.5rem;
 }
 
-.biography__button__japanese {
+.biography__button__active {
     font-weight: 500;
     font-size: .875rem;
     line-height: 1.25rem;
@@ -372,7 +372,7 @@ a {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.biography__button__english {
+.biography__button__base {
     font-weight: 500;
     font-size: .875rem;
     line-height: 1.25rem;
@@ -385,6 +385,43 @@ a {
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.biography__button__japanese__base {
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-width: 1px;
+    border: solid 1px;
+
+}
+
+.biography__button__english__active {
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-width: 1px;
+    border: solid 1px;
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+    --tw-text-opacity: 1;
+    color: rgb(236 72 153 / var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 238 238 / var(--tw-bg-opacity));
+    --tw-border-opacity: 1;
+    border-color: rgb(236 72 153 / var(--tw-border-opacity));
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 button {
@@ -400,7 +437,7 @@ button {
 }
 
 .biography__button__content {
-    font-size: 1rem;
+    font-size: .75rem;
     line-height: 1rem;
     color: #937a43;
     display: inline-flex;
@@ -413,6 +450,27 @@ button {
     margin-left: 0.5rem;
     font-weight: 500;
     padding: 6px 6px;
+    margin: 1px 5px;
+    font-weight: bold;
+    border: solid 1px #a07c43;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.biography__button__content__japanese {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #937a43;
+    display: inline-flex;
+    align-items: center;
+    border-width: 1px;
+    background-image: none;
+    border-color: #937a43;
+    justify-content: center;
+    background-color: transparent;
+    margin-left: 0.5rem;
+    font-weight: 500;
+    padding: 8px 8px;
     margin: 1px 5px;
     font-weight: bold;
     border: solid 1px #a07c43;
@@ -449,20 +507,20 @@ button {
     padding-bottom: 0.25rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    border: solid 1px;
     background-color: transparent;
     border-width: 1px;
-}
-
-.past__button {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1rem * var(--tw-space-x-reverse));
-    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
     --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);
     --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     --tw-text-opacity: 1;
     color: rgb(236 72 153 / var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 238 238 / var(--tw-bg-opacity));
+    --tw-border-opacity: 1;
+    border-color: rgb(236 72 153 / var(--tw-border-opacity));
+}
+
+.past__button {
     font-weight: 500;
     font-size: .875rem;
     line-height: 1.25rem;
@@ -470,12 +528,11 @@ button {
     padding-bottom: 0.25rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: transparent;
     border-width: 1px;
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 238 238 / var(--tw-bg-opacity));
-    --tw-border-opacity: 1;
-    border-color: rgb(236 72 153 / var(--tw-border-opacity));
+    border: solid 1px;
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .concerts__content {
