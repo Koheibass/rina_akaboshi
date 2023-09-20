@@ -37,7 +37,17 @@
                                 <img src="../YouTube.svg" width="33" height="33" alt="YouTube">
                             </a>
                         </div>
-                        <button class="header__button">Japanese</button>
+                        <ul class="dropdown">
+                            <li class="dropdown__content">
+                                <a href="" class="dropdown__menu__link">Japanese</a>
+                                <ul class="dropdown__menu">
+                                    <li class="dropdown__menu__item"><a href="../index.html"
+                                            class="drop-menu__link">Japanese</a></li>
+                                    <li class="dropdown__menu__item"><a href="/english/indexen.html"
+                                            class="drop-menu__link">English</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                         <div class="hamburger" id="js-hamburger">
                             <span class="hamburger__line hamburger__line--1"></span>
                             <span class="hamburger__line hamburger__line--2"></span>
@@ -334,6 +344,39 @@
         function switchToEnglish() {
             document.getElementById("profile").innerHTML = englishProfile;
             document.getElementById("profile").classList = "english";
+        }
+
+        'use strict';
+
+        {
+
+            const parentMenuItem = document.querySelectorAll('.dropdown__content');
+            console.log(parentMenuItem);
+
+            for (let i = 0; i < parentMenuItem.length; i++) {
+                parentMenuItem[i].addEventListener('mouseover', dropDownMenuOpen);
+                parentMenuItem[i].addEventListener('mouseleave', dropDownMenuClose);
+            }
+
+            function dropDownMenuOpen(e) {
+                const childMenuLink = e.currentTarget.querySelectorAll('.drop-menu__link');
+                console.log(childMenuLink);
+
+                for (let i = 0; i < childMenuLink.length; i++) {
+                    childMenuLink[i].classList.add('is-active');
+                }
+
+            }
+
+            function dropDownMenuClose(e) {
+                const childMenuLink = e.currentTarget.querySelectorAll('.drop-menu__link');
+                console.log(childMenuLink);
+
+                for (let i = 0; i < childMenuLink.length; i++) {
+                    childMenuLink[i].classList.remove('is-active');
+                }
+            }
+
         }
     </script>
 </body>

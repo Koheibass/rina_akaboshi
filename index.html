@@ -23,10 +23,10 @@
                     </div>
                     <div class="header__right">
                         <div class="header__menu">
-                            <a href="#prof">プロフィール</a>
+                            <a href="#biography">プロフィール</a>
                             <a href="#concert">コンサート</a>
                             <a href="#media">メディア</a>
-                            <a href="#CD">CD</a>
+                            <a href="#recordings">CD</a>
                             <a href="#contact">お問い合わせ</a>
                         </div>
                         <div class="header__icon">
@@ -37,13 +37,30 @@
                                 <img src="YouTube.svg" width="33" height="33" alt="YouTube">
                             </a>
                         </div>
-                        <button onclick="location.href='/english/indexen.html'" class="header__button">Japanese</button>
-                        <div class="hamburger" id="js-hamburger">
+                        <ul class="dropdown">
+                            <li class="dropdown__content">
+                                <a href="" class="dropdown__menu__link">Japanese</a>
+                                <ul class="dropdown__menu">
+                                    <li class="dropdown__menu__item"><a href="index.html"
+                                            class="drop-menu__link">Japanese</a></li>
+                                    <li class="dropdown__menu__item"><a href="/english/indexen.html"
+                                            class="drop-menu__link">English</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="hamburger">
                             <span class="hamburger__line hamburger__line--1"></span>
                             <span class="hamburger__line hamburger__line--2"></span>
                             <span class="hamburger__line hamburger__line--3"></span>
                         </div>
                     </div>
+                    <ul class="slide-menu">
+                        <li><a href="#biography">プロフィール</a></li>
+                        <li><a href="#concerts">コンサート</a></li>
+                        <li><a href="#media">メディア</a></li>
+                        <li><a href="#recordings">CD</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -102,8 +119,8 @@
                     </div>
                 </div>
             </section>
-            <section class="section_biography" C id="biography">
-                <h2 class="element__title">
+            <section class="section_biography">
+                <h2 class="element__title" id="biography">
                     <div>プロフィール</div>
                     <div class="translate">Biography</div>
                 </h2>
@@ -141,8 +158,8 @@
                     </div>
                 </div>
             </section>
-            <section class="section_concerts" id="concerts">
-                <h2 class="element__title">
+            <section class="section_concerts">
+                <h2 class="element__title" id="concerts">
                     <div>コンサート</div>
                     <div class="translate">Concerts</div>
                 </h2>
@@ -166,8 +183,8 @@
                     <img src="concert1.webp" class="concert-photo" width="100%">
                 </div>
             </section>
-            <section class="section_media" id="media">
-                <h2 class="element__title">
+            <section class="section_media">
+                <h2 class="element__title" id="media">
                     <div>メディア</div>
                     <div class="translate">Media</div>
                 </h2>
@@ -218,8 +235,8 @@
                     </div>
                 </div>
             </section>
-            <section class="section_recordings" id="recordings">
-                <h2 class="element__title">
+            <section class="section_recordings">
+                <h2 class="element__title" id="recordings">
                     <div>CD</div>
                     <div class="translate">Recordings</div>
                 </h2>
@@ -265,8 +282,8 @@
                     </div>
                 </div>
             </section>
-            <section class="section_contact" id="contact">
-                <h2 class="element__title">
+            <section class="section_contact">
+                <h2 class="element__title" id="contact">
                     <div>お問い合わせ</div>
                     <div class="translate">contact</div>
                 </h2>
@@ -331,6 +348,44 @@
             document.getElementById("profile").innerHTML = englishProfile;
             document.getElementById("profile").classList = "english";
         }
+
+        'use strict';
+
+        {
+
+            const parentMenuItem = document.querySelectorAll('.dropdown__content');
+            console.log(parentMenuItem);
+
+            for (let i = 0; i < parentMenuItem.length; i++) {
+                parentMenuItem[i].addEventListener('mouseover', dropDownMenuOpen);
+                parentMenuItem[i].addEventListener('mouseleave', dropDownMenuClose);
+            }
+
+            function dropDownMenuOpen(e) {
+                const childMenuLink = e.currentTarget.querySelectorAll('.drop-menu__link');
+                console.log(childMenuLink);
+
+                for (let i = 0; i < childMenuLink.length; i++) {
+                    childMenuLink[i].classList.add('is-active');
+                }
+
+            }
+
+            function dropDownMenuClose(e) {
+                const childMenuLink = e.currentTarget.querySelectorAll('.drop-menu__link');
+                console.log(childMenuLink);
+
+                for (let i = 0; i < childMenuLink.length; i++) {
+                    childMenuLink[i].classList.remove('is-active');
+                }
+            }
+
+        }
+
+        document.querySelector('.hamburger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.slide-menu').classList.toggle('active');
+        })
     </script>
 </body>
 
