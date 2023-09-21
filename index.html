@@ -55,9 +55,9 @@
                         </div>
                     </div>
                     <ul class="slide-menu">
-                        <li><a href="#biography">プロフィール</a></li>
-                        <li><a href="#concerts">コンサート</a></li>
-                        <li><a href="#media">メディア</a></li>
+                        <li><a href="#biography" id="list">プロフィール</a></li>
+                        <li><a href="#concerts" id="list2">コンサート</a></li>
+                        <li><a href="#media" id="list">メディア</a></li>
                         <li><a href="#recordings">CD</a></li>
                         <li><a href="#contact">お問い合わせ</a></li>
                     </ul>
@@ -385,6 +385,18 @@
         document.querySelector('.hamburger').addEventListener('click', function () {
             this.classList.toggle('active');
             document.querySelector('.slide-menu').classList.toggle('active');
+        })
+
+        document.querySelector('#list').addEventListener('click', function () {
+            this.classList.toggle('non-active');
+            document.querySelector('.slide-menu').classList.toggle('active');
+            document.querySelector('.hamburger').classList.toggle('active');
+        })
+
+        document.querySelector('#list2').addEventListener('click', function () {
+            this.classList.toggle('non-active');
+            document.querySelector('.slide-menu').classList.toggle('active');
+            document.querySelector('.hamburger').classList.toggle('active');
         })
     </script>
 </body>

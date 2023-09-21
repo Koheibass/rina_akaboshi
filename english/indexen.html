@@ -39,7 +39,7 @@
                         </div>
                         <ul class="dropdown">
                             <li class="dropdown__content">
-                                <a href="" class="dropdown__menu__link">Japanese</a>
+                                <a href="" class="dropdown__menu__link">English</a>
                                 <ul class="dropdown__menu">
                                     <li class="dropdown__menu__item"><a href="../index.html"
                                             class="drop-menu__link">Japanese</a></li>
@@ -48,12 +48,19 @@
                                 </ul>
                             </li>
                         </ul>
-                        <div class="hamburger" id="js-hamburger">
+                        <div class="hamburger">
                             <span class="hamburger__line hamburger__line--1"></span>
                             <span class="hamburger__line hamburger__line--2"></span>
                             <span class="hamburger__line hamburger__line--3"></span>
                         </div>
                     </div>
+                    <ul class="slide-menu">
+                        <li><a href="#biography">Biography</a></li>
+                        <li><a href="#concerts">Concerts</a></li>
+                        <li><a href="#media">Media</a></li>
+                        <li><a href="#recordings">Recordings</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -378,6 +385,11 @@
             }
 
         }
+
+        document.querySelector('.hamburger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.slide-menu').classList.toggle('active');
+        })
     </script>
 </body>
 

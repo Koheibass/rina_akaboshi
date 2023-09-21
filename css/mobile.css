@@ -980,6 +980,7 @@ ul {
 .slide-menu li {
     color: #a07c43;
     line-height: 400%;
+    margin-right: 45px;
     font-weight: 700;
     text-align: center;
 }
@@ -1000,6 +1001,16 @@ ul {
 
 .slide-menu.active {
     transform: translateX(0);
+}
+
+.slide-menu.non-active {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 65px;
+    width: 100%;
+    left: 0;
+    transform: translateX(100%);
+    transition: .3s;
 }
 
 html {
