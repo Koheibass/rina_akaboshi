@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ピアニスト赤星 里奈 公式ウェブサイト - Pianist Rina Akaboshi</title>
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Castoro&family=Noto+Serif+JP:wght@300&family=Parisienne&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/modal-video@2.4.8/css/modal-video.min.css">
+
+    <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/modal-video@2.4.8/js/jquery-modal-video.min.js"></script>
     <style>
         body {
             margin: 0;
@@ -55,11 +64,11 @@
                         </div>
                     </div>
                     <ul class="slide-menu">
-                        <li><a href="#biography" id="list">プロフィール</a></li>
-                        <li><a href="#concerts" id="list2">コンサート</a></li>
-                        <li><a href="#media" id="list">メディア</a></li>
-                        <li><a href="#recordings">CD</a></li>
-                        <li><a href="#contact">お問い合わせ</a></li>
+                        <li><a href="#biography" class="slide-menu1">プロフィール</a></li>
+                        <li><a href="#concerts" class="slide-menu2">コンサート</a></li>
+                        <li><a href="#media" class="slide-menu3">メディア</a></li>
+                        <li><a href="#recordings" class="slide-menu4">CD</a></li>
+                        <li><a href="#contact" class="slide-menu5">お問い合わせ</a></li>
                     </ul>
                 </div>
             </div>
@@ -101,12 +110,9 @@
                             <div class="translate__another">Movies</div>
                         </h3>
                         <div>
-                            <iframe class="top-movie" width="100%" height="100%"
-                                src="https://www.youtube.com/embed/4Tr9Y_rOfh4" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen>
-                            </iframe>
+                            <div class="top-movie"><img alt="video" class="top-movie__content" src="Lebewohl.jpg"
+                                    width="100%" data-video-id="4Tr9Y_rOfh4">
+                            </div>
                             <div class="top-tracklist">
                                 ベートーヴェン：ピアノソナタ第26番「告別」op.81a
                             </div>
@@ -136,20 +142,21 @@
                             </span>
                         </div>
                         <div class="biography__button">
-                            <button onClick="switchToJapanese()" class="biography__button__active">Japanese</button>
-                            <button onClick="switchToEnglish()" class="biography__button__base">English</button>
+                            <button onClick="switchToJapanese();removeClassToJapanese()" id="JapaneseLeft"
+                                class="biography__button__japanese activate">Japanese</button>
+                            <button onClick="switchToEnglish();addClassToEmglish()" id="EnglishRight"
+                                class="biography__button__english">English</button>
                         </div>
                         <div class="main__profile" id="profile">
-                            <p>クラシック音楽を専門とするピアニスト。特にドイツ音楽に造詣が深いが、近年ではフランス音楽やロシア音楽にも研究心を持ち、レパートリーと表現の幅を拡げている。
+                            <p>クラシック音楽を専門とするピアニスト。<br>特にドイツ音楽に造詣が深いが、近年ではフランス音楽やロシア音楽にも研究心を持ち、レパートリーと表現の幅を拡げている。
                                 <br>
                                 円熟した表現と音楽性を深く追求した演奏に定評があり、響きの新しい可能性を探求するために奏法を研究し続けている。
                                 <br>
-                                2018 年に初のソロアルバム「Neue Welt ～新しい世界～」をリリース。
+                                2018 年に初のソロアルバム<br>「Neue Welt ～新しい世界～」をリリース。
                                 <br>
                                 現在は自身の演奏に関する研究活動や後進の育成とともに、クラシック音楽界に貢献すべく活動の幅を広げている。
                             </p>
                         </div>
-                        <br>
                         <div>
                             <button class="biography__button__content__japanese">
                                 <a href="biography.html"> > 詳細</a>
@@ -165,10 +172,12 @@
                 </h2>
                 <div class="concerts__selector">
                     <div class="concerts__button">
-                        <button class="upcoming__button">Upcoming</button>
-                        <button class="past__button">Past</button>
+                        <button onClick="switchUpcoming();removeClassToUpcoming()" id="UpcomingLeft"
+                            class="upcoming__button">Upcoming</button>
+                        <button onClick="switchToPast();addClassToPast()" id="PastRight"
+                            class="past__button activate">Past</button>
                     </div>
-                    <div class="concerts__content">
+                    <div class="concerts__content" id="Concerts">
                         <div>
                             <div>
                                 <span class="concert-days">2021.06.19</span>
@@ -322,22 +331,28 @@
         <div class="footer">
             <div class="footer__content">
                 <a href="https://www.instagram.com/akaboshi_rina/">
-                    <img src="Instagram.svg" class="footer__instagram" width="30" height="30" alt="twitter">
+                    <img src="Instagram.svg" class="footer__instagram" width="40" height="50" alt="twitter">
                 </a>
                 <a href="https://www.youtube.com/@akaboshirina">
-                    <img src="YouTube.svg" class="footer__youtube" width="40" height="40" alt="YouTube">
+                    <img src="YouTube.svg" class="footer__youtube" width="60" height="60" alt="YouTube">
                 </a>
             </div>
             <div class="lisence">© 2023 Rina Akaboshi</div>
         </div>
     </div>
     <script>
-        const japaneseProfile = `クラシック音楽を専門とするピアニスト。特にドイツ音楽に造詣が深いが、近年ではフランス音楽やロシア音楽にも研究心を持ち、レパートリーと表現の幅を拡げている。
-                円熟した表現と音楽性を深く追求した演奏に定評があり、響きの新しい可能性を探求するために奏法を研究し続けている。
-                2018 年に初のソロアルバム「Neue Welt ～新しい世界～」をリリース。
-                現在は自身の演奏に関する研究活動や後進の育成とともに、クラシック音楽界に貢献すべく活動の幅を広げている。`;
-        const englishProfile = `Rina Akaboshi is a classical concert pianist. Although her forte is German music, her recent focus has been on broadening her repertoire with French and Russian music. She has a reputation for pursuing a mature expression and deep musicality, while exploring techniques in-depth to discover the ideal touch to bring out new possibilities in every tone.
-    After receiving numerous awards in both national and international competitions, in 2018, her first solo album, “Neue Welt – New World” was released. Her concert activities continue while studying under Mr. Yuya Tsuda, one of the most appreciated pianists in Japan, at Tokyo Art University (Graduate-level special course).`;
+        const japaneseProfile = `<div class="main__profile" id="profile">
+                            <p>クラシック音楽を専門とするピアニスト。特にドイツ音楽に造詣が深いが、近年ではフランス音楽やロシア音楽にも研究心を持ち、レパートリーと表現の幅を拡げている。
+                                <br>
+                                円熟した表現と音楽性を深く追求した演奏に定評があり、響きの新しい可能性を探求するために奏法を研究し続けている。
+                                <br>
+                                2018 年に初のソロアルバム「Neue Welt ～新しい世界～」をリリース。
+                                <br>
+                                現在は自身の演奏に関する研究活動や後進の育成とともに、クラシック音楽界に貢献すべく活動の幅を広げている。
+                            </p>
+                        </div>`;
+        const englishProfile = `Rina Akaboshi is a classical concert pianist. Although her forte is German music, her recent focus has been on broadening her repertoire with French and Russian music.<br> She has a reputation for pursuing a mature expression and deep musicality, while exploring techniques in-depth to discover the ideal touch to bring out new possibilities in every tone.
+            <br>After receiving numerous awards in both national and international competitions, in 2018, her first solo album, “Neue Welt - New World” was released. <br>Her concert activities continue while studying under Mr. Yuya Tsuda, one of the most appreciated pianists in Japan, at Tokyo Art University (Graduate-level special course).<br><br>`;
 
         function switchToJapanese() {
             document.getElementById("profile").innerHTML = japaneseProfile;
@@ -347,6 +362,44 @@
         function switchToEnglish() {
             document.getElementById("profile").innerHTML = englishProfile;
             document.getElementById("profile").classList = "english";
+        }
+
+        function addClassToEmglish() {
+            document.getElementById('EnglishRight').classList.add('activate');
+            document.getElementById('JapaneseLeft').classList.remove('activate');
+
+        }
+
+        function removeClassToJapanese() {
+            document.getElementById('EnglishRight').classList.remove('activate');
+            document.getElementById('JapaneseLeft').classList.add('activate');
+
+        }
+
+
+        const upcomingNote = `<span class="upcoming">coming soon!</span>`;
+        const pastNote = `<span class="concert-days">2021.06.19</span><span class="concert-detail"> YouTube / イマチケ</span><br><a href="concert1.html" class="concert-update">赤星 里奈 ピアノリサイタル vol.1 presented by
+                                "MUSICUM"</a>`;
+
+
+        function switchUpcoming() {
+            document.getElementById("Concerts").innerHTML = upcomingNote;
+            document.getElementById("Concerts").classList = "upcoming";
+        }
+
+        function switchToPast() {
+            document.getElementById("Concerts").innerHTML = pastNote;
+            document.getElementById("Concerts").classList = "past";
+        }
+
+        function addClassToPast() {
+            document.getElementById('PastRight').classList.add('activate');
+            document.getElementById('UpcomingLeft').classList.remove('activate');
+        }
+
+        function removeClassToUpcoming() {
+            document.getElementById('PastRight').classList.remove('activate');
+            document.getElementById('UpcomingLeft').classList.add('activate');
         }
 
         'use strict';
@@ -387,17 +440,44 @@
             document.querySelector('.slide-menu').classList.toggle('active');
         })
 
-        document.querySelector('#list').addEventListener('click', function () {
+        document.querySelector('.slide-menu1').addEventListener('click', function () {
             this.classList.toggle('non-active');
             document.querySelector('.slide-menu').classList.toggle('active');
             document.querySelector('.hamburger').classList.toggle('active');
         })
 
-        document.querySelector('#list2').addEventListener('click', function () {
+        document.querySelector('.slide-menu2').addEventListener('click', function () {
             this.classList.toggle('non-active');
             document.querySelector('.slide-menu').classList.toggle('active');
             document.querySelector('.hamburger').classList.toggle('active');
         })
+
+        document.querySelector('.slide-menu3').addEventListener('click', function () {
+            this.classList.toggle('non-active');
+            document.querySelector('.slide-menu').classList.toggle('active');
+            document.querySelector('.hamburger').classList.toggle('active');
+        })
+
+        document.querySelector('.slide-menu4').addEventListener('click', function () {
+            this.classList.toggle('non-active');
+            document.querySelector('.slide-menu').classList.toggle('active');
+            document.querySelector('.hamburger').classList.toggle('active');
+        })
+
+        document.querySelector('.slide-menu5').addEventListener('click', function () {
+            this.classList.toggle('non-active');
+            document.querySelector('.slide-menu').classList.toggle('active');
+            document.querySelector('.hamburger').classList.toggle('active');
+        })
+
+        $('.top-movie__content').modalVideo({
+            channel: 'youtube',
+            youtube: {
+                autoplay: 1,
+                mute: 1,
+                playsinline: 0,
+            }
+        });
     </script>
 </body>
 
