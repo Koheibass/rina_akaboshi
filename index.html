@@ -48,7 +48,7 @@
                         </div>
                         <ul class="dropdown">
                             <li class="dropdown__content">
-                                <a href="" class="dropdown__menu__link">Japanese</a>
+                                <a class="dropdown__menu__link">Japanese</a>
                                 <ul class="dropdown__menu">
                                     <li class="dropdown__menu__item"><a href="index.html"
                                             class="drop-menu__link">Japanese</a></li>
@@ -81,7 +81,7 @@
                 <div class="news">
                     <div class="news__title">NEWS</div>
                     <a href="updates2.html" class="top__news">
-                        <span>カルチャーメディア誌「Bridge」に掲載されました。</span>
+                        <span>クラシック愛好家のためのオンラインコミュニティ“おといのちオンライン”<br>開設のお知らせ</span>
                     </a>
                 </div>
                 <div class="topix">
@@ -92,29 +92,38 @@
                         </h3>
                         <div class="info_content">
                             <div class="info_content_days">
-                                "2022.02.12"
-                                <small>(Sat)</small>
-                            </div>
-                            <a href="updates2.html" class="info_detail">カルチャーメディア誌「Bridge」に掲載されました。</a>
-                            <br>
-                            <div class="info_content_days">
-                                "2021.05.31"
+                                "2023.09.18"
                                 <small>(Mon)</small>
                             </div>
-                            <a href="concert1.html" class="info_detail">オンラインコンサート開催決定！</a>
+                            <a href="updates2.html" class="info_detail">クラシック愛好家のためのオンラインコミュニティ“おといのちオンライン”開設のお知らせ</a>
+                            <br>
+                            <div class="info_content_days">
+                                "2023.08.01"
+                                <small>(Tue)</small>
+                            </div>
+                            <a href="updates2.html" class="info_detail">みんなの挑戦をあたたかく見守る場所“おといのち音楽会”開催決定</a>
+                        </div>
+                        <div class="top__button">
+                            <button class="top__button__content">
+                                <a href="topnews.html">> もっと見る</a>
+                            </button>
                         </div>
                     </div>
+
                     <div>
                         <h3 class="play-movie">
                             <div>演奏動画</div>
                             <div class="translate__another">Movies</div>
                         </h3>
                         <div>
-                            <div class="top-movie"><img alt="video" class="top-movie__content" src="Lebewohl.jpg"
-                                    width="100%" data-video-id="4Tr9Y_rOfh4">
+                            <div class="top-movie" data-video-id="4Tr9Y_rOfh4">
+                                <img alt="video" class="top-movie2" src="Lebewohl.jpg" width="100%">
+                                <div class="movie-play">
+                                    <img src="playmovie.svg" width="20%">
+                                </div>
                             </div>
                             <div class="top-tracklist">
-                                ベートーヴェン：ピアノソナタ第26番「告別」op.81a
+                                ベートーヴェン : ピアノソナタ第26番「告別」op.81a
                             </div>
                         </div>
                         <div class="top__button">
@@ -172,7 +181,7 @@
                 </h2>
                 <div class="concerts__selector">
                     <div class="concerts__button">
-                        <button onClick="switchUpcoming();removeClassToUpcoming()" id="UpcomingLeft"
+                        <button onClick="switchToUpcoming();removeClassToUpcoming()" id="UpcomingLeft"
                             class="upcoming__button">Upcoming</button>
                         <button onClick="switchToPast();addClassToPast()" id="PastRight"
                             class="past__button activate">Past</button>
@@ -198,42 +207,49 @@
                     <div class="translate">Media</div>
                 </h2>
                 <div class="media__button">
-                    <button class="movie-button">動画</button>
-                    <button class="photo-button">写真</button>
+                    <button onClick="switchToMovie();removeClassToMovie()" id="MovieLeft"
+                        class="movie-button activate">動画</button>
+                    <button onClick="switchToPhoto();addClassToPhoto()" id="PhotoRight" class="photo-button">写真</button>
                 </div>
-                <div class="media__content">
+                <div class="media__content" id="medialist">
                     <div class="media__list">
                         <div>
-                            <iframe class="indivisual-movie" width="100%" height="auto"
-                                src="https://www.youtube.com/embed/4Tr9Y_rOfh4" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                            <div class="individual-videos">ベートーヴェン：ピアノソナタ第26番「告別」op.81a</div>
+                            <div class="top-movie" data-video-id="4Tr9Y_rOfh4">
+                                <img alt="video" class="top-movie2" src="Lebewohl.jpg" width="100%">
+                                <div class="movie-play">
+                                    <img src="playmovie.svg" width="20%">
+                                </div>
+                            </div>
+                            <div class="individual-videos">
+                                ベートーヴェン : ピアノソナタ第26番「告別」op.81a
+                            </div>
                         </div>
                         <div>
-                            <iframe class="indivisual-movie" width="100%" height="auto"
-                                src="https://www.youtube.com/embed/n-B9BzPxbzk" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                            <div class="top-movie" data-video-id="n-B9BzPxbzk">
+                                <img alt="video" class="top-movie2" src="Widmung.jpg" width="100%">
+                                <div class="movie-play">
+                                    <img src="playmovie.svg" width="20%">
+                                </div>
+                            </div>
                             <div class="individual-videos">シューマン＝リスト : 献呈</div>
                         </div>
                         <div>
-                            <iframe class="indivisual-movie" width="100%" height="auto"
-                                src="https://www.youtube.com/embed/IkZB4TZtUAM" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                            <div class="individual-videos">ショパン：練習曲集op.10よりNo.5「黒鍵」</div>
+                            <div class="top-movie" data-video-id="IkZB4TZtUAM">
+                                <img alt="video" class="top-movie2" src="blackkeys.jpg" width="100%">
+                                <div class="movie-play">
+                                    <img src="playmovie.svg" width="20%">
+                                </div>
+                            </div>
+                            <div class="individual-videos">ショパン : 練習曲集op.10よりNo.5「黒鍵」</div>
                         </div>
                         <div>
-                            <iframe class="indivisual-movie" width="100%" height="auto"
-                                src="https://www.youtube.com/embed/66Fel4dySJ8" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                            <div class="individual-videos">シューベルト：即興曲　第3番　D899 op.90-3 変ト長調</div>
+                            <div class="top-movie" data-video-id="66Fel4dySJ8">
+                                <img alt="video" class="top-movie2" src="Impromptus.jpg" width="100%">
+                                <div class="movie-play">
+                                    <img src="playmovie.svg" width="20%">
+                                </div>
+                            </div>
+                            <div class="individual-videos">シューベルト：即興曲 第3番 D899 op.90-3 変ト長調</div>
                         </div>
                     </div>
                     <br>
@@ -297,31 +313,27 @@
                     <div class="translate">contact</div>
                 </h2>
                 <div>
-                    <div class="contact__annotation">ピアニスト 赤星里奈へのご依頼・お問い合わせなどは、こちらからお願い致します。</div>
+                    <div class="contact__annotation">ピアニスト 赤星里奈へのご依頼・お問い合わせなどは、<br>こちらからお願い致します。</div>
                     <form action="/api/hello" method="get" novalidate id="contact-form" class="contact-form">
                         <div>
-                            <label for="name" class="contact-form">お名前</label>
+                            <label for="name" class="contact-form2">お名前</label>
                             <input class="contact__frame" id="name" name="name">
-                            <br>
                         </div>
                         <div>
-                            <label for="email" class="contact-form">メールアドレス</label>
+                            <label for="email" class="contact-form2">メールアドレス</label>
                             <input class="contact__frame" id="email" name="email">
-                            <br>
                         </div>
                         <div>
-                            <label class="contact-form" for="contact-form-type">お問い合わせの種別</label>
-                            <select name="type" class="contact__frame__type">
+                            <label class="contact-form2" for="contact-form-type">お問い合わせの種別</label>
+                            <select name="type" class="contact__frame__type">er
                                 <option value="playrequest">演奏依頼</option>
                                 <option value="request">企業からのご依頼</option>
                                 <option value="others">その他</option>
                             </select>
-                            <br>
                         </div>
                         <div>
-                            <label for="message" class="contact-form">お問い合わせの内容</label>
+                            <label for="message" class="contact-form2">お問い合わせの内容</label>
                             <textarea class="contact__frame__message" id="message" name="message"></textarea>
-                            <br>
                         </div>
                         <button class="contact__button" type="submit" data-comform-touched="true">送信</button>
                     </form>
@@ -342,7 +354,7 @@
     </div>
     <script>
         const japaneseProfile = `<div class="main__profile" id="profile">
-                            <p>クラシック音楽を専門とするピアニスト。特にドイツ音楽に造詣が深いが、近年ではフランス音楽やロシア音楽にも研究心を持ち、レパートリーと表現の幅を拡げている。
+                            <p>クラシック音楽を専門とするピアニスト。<br>特にドイツ音楽に造詣が深いが、近年ではフランス音楽やロシア音楽にも研究心を持ち、レパートリーと表現の幅を拡げている。
                                 <br>
                                 円熟した表現と音楽性を深く追求した演奏に定評があり、響きの新しい可能性を探求するために奏法を研究し続けている。
                                 <br>
@@ -382,7 +394,7 @@
                                 "MUSICUM"</a>`;
 
 
-        function switchUpcoming() {
+        function switchToUpcoming() {
             document.getElementById("Concerts").innerHTML = upcomingNote;
             document.getElementById("Concerts").classList = "upcoming";
         }
@@ -400,6 +412,84 @@
         function removeClassToUpcoming() {
             document.getElementById('PastRight').classList.remove('activate');
             document.getElementById('UpcomingLeft').classList.add('activate');
+        }
+
+        const movieNote = `<div class="media__content">
+                    <div class="media__list">
+                        <div>
+                            <div class="top-movie" data-video-id="4Tr9Y_rOfh4">
+                                <img alt="video" class="top-movie2" src="Lebewohl.jpg" width="100%">
+                                <div class="movie-play">
+                                    <img src="playmovie.svg" width="20%">
+                                </div>
+                            </div>
+                            <div class="individual-videos">
+                                ベートーヴェン : ピアノソナタ第26番「告別」op.81a
+                            </div>
+                        </div>
+                        <div>
+                            <div class="top-movie" data-video-id="n-B9BzPxbzk">
+                                <img alt="video" class="top-movie2" src="Widmung.jpg" width="100%">
+                                <div class="movie-play">
+                                    <img src="playmovie.svg" width="20%">
+                                </div>
+                            </div>
+                            <div class="individual-videos">シューマン＝リスト : 献呈</div>
+                        </div>
+                        <div>
+                            <div class="top-movie" data-video-id="IkZB4TZtUAM">
+                                <img alt="video" class="top-movie2" src="blackkeys.jpg" width="100%">
+                                <div class="movie-play">
+                                    <img src="playmovie.svg" width="20%">
+                                </div>
+                            </div>
+                            <div class="individual-videos">ショパン : 練習曲集op.10よりNo.5「黒鍵」</div>
+                        </div>
+                        <div>
+                            <div class="top-movie" data-video-id="66Fel4dySJ8">
+                                <img alt="video" class="top-movie2" src="Impromptus.jpg" width="100%">
+                                <div class="movie-play">
+                                    <img src="playmovie.svg" width="20%">
+                                </div>
+                            </div>
+                            <div class="individual-videos">シューベルト：即興曲 第3番 D899 op.90-3 変ト長調</div>
+                        </div>
+                    </div>
+                    <div class="top__button">
+                        <button class="top__button__content">
+                            <a href="videos.html">> もっと見る</a>
+                        </button>
+                    </div>
+                </div>`;
+        const photoNote = `<div class="photo-list">
+        <img src="photo1.webp" class="photo__detail">
+        <img src="photo2.webp" class="photo__detail">
+        <img src="photo3.webp" class="photo__detail">
+        <img src="photo4.webp" class="photo__detail">
+      </div><div class="top__button">
+                        <button class="top__button__content">
+                            <a href="videos.html">> もっと見る</a>
+                        </button>
+                    </div>`;
+
+        function switchToMovie() {
+            document.getElementById("medialist").innerHTML = movieNote;
+            document.getElementById("medialist").classList = "movie";
+        }
+
+        function switchToPhoto() {
+            document.getElementById("medialist").innerHTML = photoNote;
+            document.getElementById("medialist").classList = "photo";
+        }
+
+        function addClassToPhoto() {
+            document.getElementById('PhotoRight').classList.add('activate');
+            document.getElementById('MovieLeft').classList.remove('activate');
+        }
+
+        function removeClassToMovie() {
+            document.getElementById('PhotoRight').classList.remove('activate');
+            document.getElementById('MovieLeft').classList.add('activate');
         }
 
         'use strict';
@@ -470,7 +560,7 @@
             document.querySelector('.hamburger').classList.toggle('active');
         })
 
-        $('.top-movie__content').modalVideo({
+        $('.top-movie').modalVideo({
             channel: 'youtube',
             youtube: {
                 autoplay: 1,
