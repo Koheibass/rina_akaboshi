@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ピアニスト赤星 里奈 公式ウェブサイト - Pianist Rina Akaboshi</title>
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="/css/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -40,15 +40,15 @@
                         </div>
                         <div class="header__icon">
                             <a href="https://www.instagram.com/akaboshi_rina/" class="instagram">
-                                <img src="Instagram.svg" width="24" height="24" alt="instagram">
+                                <img src="/Instagram.svg" width="24" height="24" alt="instagram">
                             </a>
                             <a href="https://www.youtube.com/@akaboshirina" class="youtube">
-                                <img src="YouTube.svg" width="33" height="33" alt="YouTube">
+                                <img src="/YouTube.svg" width="33" height="33" alt="YouTube">
                             </a>
                         </div>
                         <ul class="dropdown">
                             <li class="dropdown__content">
-                                <a href="" class="dropdown__menu__link">Japanese</a>
+                                <a class="dropdown__menu__link">Japanese</a>
                                 <ul class="dropdown__menu">
                                     <li class="dropdown__menu__item"><a href="index.html"
                                             class="drop-menu__link">Japanese</a></li>
@@ -57,7 +57,7 @@
                                 </ul>
                             </li>
                         </ul>
-                        <div class="hamburger visibility-hidden">
+                        <div class="hamburger">
                             <span class="hamburger__line hamburger__line--1"></span>
                             <span class="hamburger__line hamburger__line--2"></span>
                             <span class="hamburger__line hamburger__line--3"></span>
@@ -73,53 +73,56 @@
                 </div>
             </div>
         </nav>
-        <main>
-            <div>
-                <h3 class="info">
-                    <div>最新情報</div>
-                    <div class="translate__another">Updates</div>
-                </h3>
-                <div class="info_content_detail">
-                    <div class="info_content_days">
-                        "2023.09.18"
-                        <small>(Mon)</small>
+        <main class="latest-information__main">
+            <div class="latest-information">
+                <h2 class="latest-information__title">最新情報</h2>
+                <div class="latest-information__content">
+                    <div>
+                        <div class="latest-information__sentence">
+                            みんなの挑戦をあたたかく見守る場所“おといのち音楽会”開催決定
+                        </div>
+                        <div class="latest-information__days">
+                            2023.08.01
+                        </div>
+                        <img src="/photo/2023801.jpg" width=100%>
                     </div>
-                    <a href="https://oto-inochi.com/" class="info_detail">クラシック愛好家のためのオンラインコミュニティ“おといのちオンライン”開設のお知らせ</a>
-                    <br>
-                    <div class="info_content_days">
-                        "2023.08.01"
-                        <small>(Tue)</small>
+                    <hr class="while">
+                    <div class="latest-information__detail">
+                        <p>ピアニスト赤星里奈主催 "第1回 おといのち音楽会"
+                            開催決定！！
+                            <br>
+                            <br>
+                            みんなの挑戦をみんなで見守り背中を押す。
+                            <br>お互いに健闘をたたえ励まし合える場所。
+                            <br>誰もが自由に挑戦できる舞台。
+                            <br>そんな温かい会を目指します。
+                            <br><br>
+                            年齢や音楽歴、演奏楽器など関係なく、
+                            <br>それぞれの目標に挑戦できる場所です。
+                            <br>ぜひご参加をお待ちしています！！
+                            <br>※参加申込は終了しました
+                            <br><br>
+                            大阪公演　聴講券はこちら<br>
+                            https://t.pia.jp/pia/event/event.do?eventCd=2328743
+                        </p>
                     </div>
-                    <a href="/news/2023801.html" class="info_detail">みんなの挑戦をあたたかく見守る場所“おといのち音楽会”開催決定</a>
-                    <br>
-                    <div class="info_content_days">
-                        "2022.02.12"
-                        <small>(Sat)</small>
-                    </div>
-                    <a href="updates2.html" class="info_detail">カルチャーメディア誌「Bridge」に掲載されました。</a>
-                    <br>
-                    <div class="info_content_days">
-                        "2021.05.31"
-                        <small>(Mon)</small>
-                    </div>
-                    <a href="concert1.html" class="info_detail">オンラインコンサート開催決定！</a>
                 </div>
-            </div>
-            <div class="return">
-                <a class="return__content" href="index.html">Topに戻る</a>
-            </div>
-            <div class="footer">
-                <div class="footer__content">
-                    <a href="https://www.instagram.com/akaboshi_rina/">
-                        <img src="Instagram.svg" class="footer__instagram" width="30" height="30" alt="twitter">
-                    </a>
-                    <a href="https://www.youtube.com/@akaboshirina">
-                        <img src="YouTube.svg" class="footer__youtube" width="40" height="40" alt="YouTube">
-                    </a>
+                <div class="return">
+                    <a class="return__content" href="index.html">Topに戻る</a>
                 </div>
-                <div class="lisence">© 2023 Rina Akaboshi</div>
             </div>
         </main>
+        <div class="footer">
+            <div class="footer__content">
+                <a href="https://www.instagram.com/akaboshi_rina/">
+                    <img src="/Instagram.svg" class="footer__instagram" width="40" height="50" alt="twitter">
+                </a>
+                <a href="https://www.youtube.com/@akaboshirina">
+                    <img src="/YouTube.svg" class="footer__youtube" width="60" height="60" alt="YouTube">
+                </a>
+            </div>
+            <div class="lisence">© 2023 Rina Akaboshi</div>
+        </div>
     </div>
 </body>
 

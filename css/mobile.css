@@ -32,7 +32,7 @@
     font-family: 'Castoro', serif;
     color: #937a43;
     text-decoration: none;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 .header__right {
@@ -86,6 +86,10 @@
     text-decoration: none;
 }
 
+.visibility-hidden {
+    visibility: hidden;
+}
+
 .main {
     flex-grow: 1;
     background-color: #fefaff;
@@ -108,7 +112,7 @@
 .news {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4rem;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,6 +139,7 @@
     text-decoration: none;
     color: #937a43;
     font-size: 93%;
+    margin-left: 0.5rem;
 }
 
 a {
@@ -232,10 +237,17 @@ a {
     margin-bottom: 1rem;
 }
 
+.info_content_detail {
+
+    display: grid;
+    margin-bottom: 12rem;
+}
+
 .info_content_days {
     font-weight: 700;
     font-size: .875rem;
     line-height: 1.25rem;
+    color: #937a43;
 }
 
 .info_detail {
@@ -285,6 +297,7 @@ a {
     font-size: .75rem;
     line-height: 1rem;
     padding-bottom: 1rem;
+    color: #937a43;
 }
 
 .top__button {
@@ -489,6 +502,7 @@ button {
 
 .upcoming {
     padding-bottom: 1rem;
+    color: #937a43;
 }
 
 .upcoming__button.activate {
@@ -559,13 +573,15 @@ button {
     margin-bottom: 1rem;
 }
 
-.concrert-days {
+.concert-days {
     font-weight: 700;
+    color: #937a43;
 }
 
 .concert-detail {
     font-size: .875rem;
     line-height: 1.25rem;
+    color: #937a43;
 }
 
 .concert-update {
@@ -728,6 +744,7 @@ button {
 
 .recorded-music {
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 b {
@@ -790,6 +807,7 @@ b {
     padding-left: 0.5rem;
     padding-bottom: 0.25rem;
     display: block;
+    background-color: #ffffff;
 }
 
 .contact__frame {
@@ -858,7 +876,7 @@ b {
 .footer__youtube {
     display: inline-block;
     position: relative;
-    padding-top: 5.5px;
+    padding-top: 4px;
     padding-left: 15px;
 }
 
@@ -969,7 +987,7 @@ ul {
     margin: 0;
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 3px;
+    margin-top: 2px;
 }
 
 .dropdown__menu__link {
@@ -1113,4 +1131,85 @@ ul {
 
 html {
     scroll-behavior: smooth;
+}
+
+/* 全体設定 */
+.css-carousel-slider3 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.css-carousel-slider3 img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+/* スライド設定 */
+.css-carousel-slider3 .slide-wrap {
+    width: 300%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    animation: css-carousel-slider3 15s infinite;
+    animation-delay: 2s;
+}
+
+.css-carousel-slider3 .slide-wrap-main {
+    width: 100%;
+    z-index: 1;
+    animation: css-carousel-slider-main3 15s infinite;
+    animation-delay: 2s;
+}
+
+.css-carousel-slider3 .slide {
+    width: 100%;
+}
+
+/* スライダーアニメーションの設定 */
+@keyframes css-carousel-slider3 {
+    0% {
+        transform: translateX(0);
+    }
+
+    27.3% {
+        transform: translateX(calc(1 / 3 * -100%));
+    }
+
+    33.3% {
+        transform: translateX(calc(1 / 3 * -100%));
+    }
+
+    60.6% {
+        transform: translateX(calc(2 / 3 * -100%));
+    }
+
+    66.6% {
+        transform: translateX(calc(2 / 3 * -100%));
+    }
+
+    94% {
+        transform: translateX(calc(3 / 3 * -100%));
+    }
+
+    100% {
+        transform: translateX(calc(3 / 3 * -100%));
+    }
+}
+
+@keyframes css-carousel-slider-main3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    66.6% {
+        transform: translateX(100%);
+    }
+
+    94% {
+        transform: translateX(0%);
+    }
 }

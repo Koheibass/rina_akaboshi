@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -57,7 +57,7 @@
                                 </ul>
                             </li>
                         </ul>
-                        <div class="hamburger">
+                        <div class="hamburger visibility-hidden">
                             <span class="hamburger__line hamburger__line--1"></span>
                             <span class="hamburger__line hamburger__line--2"></span>
                             <span class="hamburger__line hamburger__line--3"></span>
@@ -73,140 +73,82 @@
                 </div>
             </div>
         </nav>
-        <div class="css-carousel-slider3">
-            <div class="slide-wrap-main">
-                <div class="slide"><img src="/photo/hero1.webp" width="100%" alt=""></div>
+        <main>
+            <h2 class="element__title">
+                <div>メディア</div>
+                <div class="translate">Media</div>
+            </h2>
+            <div class="media__button">
+                <button onClick="switchToMovie();removeClassToMovie()" id="MovieLeft"
+                    class="movie-button activate">動画</button>
+                <button onClick="switchToPhoto();addClassToPhoto()" id="PhotoRight" class="photo-button">写真</button>
             </div>
-            <div class="slide-wrap">
-                <div class="slide"><img src="/photo/hero1.webp" width="100%" alt=""></div>
-                <div class="slide"><img src="/photo/hero2.webp" width="100%" alt=""></div>
-                <div class="slide"><img src="/photo/hero3.webp" width="100%" alt=""></div>
-            </div>
-        </div>
-        <main class="main">
-            <section class="section_mews">
-                <div class="news">
-                    <div class="news__title">NEWS</div>
-                    <a href="https://oto-inochi.com/" class="top__news">
-                        <span>クラシック愛好家のためのオンラインコミュニティ“おといのちオンライン”<br>開設のお知らせ</span>
-                    </a>
-                </div>
-                <div class="topix">
-                    <div>
-                        <h3 class="info">
-                            <div>最新情報</div>
-                            <div class="translate__another">Updates</div>
-                        </h3>
-                        <div class="info_content">
-                            <div class="info_content_days">
-                                "2023.09.18"
-                                <small>(Mon)</small>
-                            </div>
-                            <a href="https://oto-inochi.com/"
-                                class="info_detail">クラシック愛好家のためのオンラインコミュニティ“おといのちオンライン”開設のお知らせ</a>
-                            <br>
-                            <div class="info_content_days">
-                                "2023.08.01"
-                                <small>(Tue)</small>
-                            </div>
-                            <a href="/news/2023801.html" class="info_detail">みんなの挑戦をあたたかく見守る場所“おといのち音楽会”開催決定</a>
-                        </div>
-                        <div class="top__button">
-                            <button class="top__button__content">
-                                <a href="topnews.html">> もっと見る</a>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 class="play-movie">
-                            <div>演奏動画</div>
-                            <div class="translate__another">Movies</div>
-                        </h3>
-                        <div>
-                            <div class="top-movie" data-video-id="4Tr9Y_rOfh4">
-                                <img alt="video" class="top-movie2" src="Lebewohl.jpg" width="100%">
-                                <div class="movie-play">
-                                    <img src="playmovie.svg" width="20%">
-                                </div>
-                            </div>
-                            <div class="top-tracklist">
-                                ベートーヴェン : ピアノソナタ第26番「告別」op.81a
-                            </div>
-                        </div>
-                        <div class="top__button">
-                            <button class="top__button__content">
-                                <a href="videos.html">> もっと見る</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section_biography">
-                <h2 class="element__title" id="biography">
-                    <div>プロフィール</div>
-                    <div class="translate">Biography</div>
-                </h2>
-                <div class="biography__content">
-                    <div>
-                        <img src="biography.webp" class="biography__photo" width="100%">
-                    </div>
-                    <div class="biography__name">
-                        <div class="biography__name__japanese">
-                            赤星 里奈
-                            <span class="biography__name__alphabet">
-                                Rina Akaboshi
-                            </span>
-                        </div>
-                        <div class="biography__button">
-                            <button onClick="switchToJapanese();removeClassToJapanese()" id="JapaneseLeft"
-                                class="biography__button__japanese activate">Japanese</button>
-                            <button onClick="switchToEnglish();addClassToEmglish()" id="EnglishRight"
-                                class="biography__button__english">English</button>
-                        </div>
-                        <div class="main__profile" id="profile">
-                            <p>クラシック音楽を専門とするピアニスト。<br>特にドイツ音楽に造詣が深いが、近年ではフランス音楽やロシア音楽にも研究心を持ち、レパートリーと表現の幅を拡げている。
-                                <br>
-                                円熟した表現と音楽性を深く追求した演奏に定評があり、響きの新しい可能性を探求するために奏法を研究し続けている。
-                                <br>
-                                2018 年に初のソロアルバム<br>「Neue Welt ～新しい世界～」をリリース。
-                                <br>
-                                現在は自身の演奏に関する研究活動や後進の育成とともに、クラシック音楽界に貢献すべく活動の幅を広げている。
-                            </p>
-                            <button class="biography__button__content__japanese">
-                                <a href="biography.html"> > 詳細</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section_concerts">
-                <h2 class="element__title" id="concerts">
-                    <div>コンサート</div>
-                    <div class="translate">Concerts</div>
-                </h2>
-                <div class="concerts__selector">
-                    <div class="concerts__button">
-                        <button onClick="switchToUpcoming();removeClassToUpcoming()" id="UpcomingLeft"
-                            class="upcoming__button">Upcoming</button>
-                        <button onClick="switchToPast();addClassToPast()" id="PastRight"
-                            class="past__button activate">Past</button>
-                    </div>
-                    <div class="concerts__content" id="Concerts">
-                        <div>
-                            <div>
-                                <span class="concert-days">2021.06.19</span>
-                                <span class="concert-detail">YouTube / イマチケ</span>
-                            </div>
-                            <a href="concert1.html" class="concert-update">赤星 里奈 ピアノリサイタル vol.1 presented by
-                                "MUSICUM"</a>
-                        </div>
-                    </div>
+            <div class="videos__list">
+                <div>
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/4Tr9Y_rOfh4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p>ベートーヴェン：ピアノソナタ第26番「告別」op.81a</p>
                 </div>
                 <div>
-                    <img src="concert1.webp" class="concert-photo" width="100%">
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/n-B9BzPxbzk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p>シューマン＝リスト : 献呈</p>
                 </div>
-            </section>
+                <div>
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/IkZB4TZtUAM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p>ショパン：練習曲集op.10よりNo.5「黒鍵」</p>
+                </div>
+                <div>
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/66Fel4dySJ8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p>シューベルト：即興曲　第3番　D899 op.90-3 変ト長調</p>
+                </div>
+                <div>
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Cq0A7z6Ov24"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p>ショパン：舟歌　作品60 嬰ヘ長調</p>
+                </div>
+                <div>
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Z89P1TQiEHM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p>ブラームス：ピアノのための４つの小品　作品119</p>
+                </div>
+                <div>
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/K5D_2XrDhiQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p>ベートーヴェン：ピアノソナタ 第21番「ワルトシュタイン」op.53 第一楽章</p>
+                </div>
+                <div>
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/7wDfVUm4-B0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p>ブラームス：ピアノのための６つの小品 Op.118</p>
+                </div>
+            </div>
+            <div class="top__button">
+                <button class="top__button__content">
+                    <a href="https://www.youtube.com/@PianistRinaAkaboshi">> And More...</a>
+                </button>
+            </div>
+            <div class="return">
+                <a class="return__content" href="index.html">Topに戻る</a>
+            </div>
             <section class="section_media">
                 <h2 class="element__title" id="media">
                     <div>メディア</div>
@@ -266,93 +208,14 @@
                     </div>
                 </div>
             </section>
-            <section class="section_recordings">
-                <h2 class="element__title" id="recordings">
-                    <div>CD</div>
-                    <div class="translate">Recordings</div>
-                </h2>
-                <div class="recordings__content">
-                    <div>
-                        <img src="NeueWelt1.webp" class="recordings__photo" width="100%">
-                    </div>
-                    <div class="cd__content">
-                        <h3 class="cd__title">Neue Welt 〜新しい世界〜</h3>
-                        <p class="cd__days">2018年1月11日 リリース<br>¥ 3,300 (税込) + 送料</p>
-                        <p class="cd__content">ドイツで録音された珠玉のCD。
-                            <br>ドイツの空気の中に響く美しい音色を是非お楽しみください。
-                        </p>
-                        <div class="recorded-music">
-                            <b>収録曲</b>
-                            <br>
-                            <div>
-                                <ul class="recorded-music-list">
-                                    <li class="recorded-music-list__content">
-                                        J.S.バッハ
-                                        <br>
-                                        平均律クラヴィーア曲集第Ⅱ巻より 第9番 ホ長調 BWV878
-                                    </li>
-                                    <li class="recorded-music-list__content">
-                                        L.v.ベートーヴェン
-                                        <br>
-                                        ピアノソナタ第30番 ホ長調 作品109
-                                    </li>
-                                    <li class="recorded-music-list__content">
-                                        F.シューベルト
-                                        <br>
-                                        ピアノソナタ第18番 ト長調 "幻想" D894
-                                    </li>
-                                </ul>
-                            </div>
-                            <br>
-                            "録音: 2017年4月27日
-                            <br>Barocksaal Rostock, Deutschland "
-                        </div>
-                        <button class="recordings__button">
-                            <a href="https://rinaakaboshi.official.ec/items/65023901">CDを購入</a>
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <section class="section_contact">
-                <h2 class="element__title" id="contact">
-                    <div>お問い合わせ</div>
-                    <div class="translate">contact</div>
-                </h2>
-                <div>
-                    <div class="contact__annotation">ピアニスト 赤星里奈へのご依頼・お問い合わせなどは、<br>こちらからお願い致します。</div>
-                    <form action="/api/hello" method="get" novalidate id="contact-form" class="contact-form">
-                        <div>
-                            <label for="name" class="contact-form2">お名前</label>
-                            <input class="contact__frame" id="name" name="name">
-                        </div>
-                        <div>
-                            <label for="email" class="contact-form2">メールアドレス</label>
-                            <input class="contact__frame" id="email" name="email">
-                        </div>
-                        <div>
-                            <label class="contact-form2" for="contact-form-type">お問い合わせの種別</label>
-                            <select name="type" class="contact__frame__type">
-                                <option value="playrequest">演奏依頼</option>
-                                <option value="request">企業からのご依頼</option>
-                                <option value="others">その他</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="message" class="contact-form2">お問い合わせの内容</label>
-                            <textarea class="contact__frame__message" id="message" name="message"></textarea>
-                        </div>
-                        <button class="contact__button" type="submit" data-comform-touched="true">送信</button>
-                    </form>
-                </div>
-            </section>
         </main>
         <div class="footer">
             <div class="footer__content">
                 <a href="https://www.instagram.com/akaboshi_rina/">
-                    <img src="Instagram.svg" class="footer__instagram" width="40" height="50" alt="twitter">
+                    <img src="Instagram.svg" class="footer__instagram" width="30" height="30" alt="twitter">
                 </a>
                 <a href="https://www.youtube.com/@akaboshirina">
-                    <img src="YouTube.svg" class="footer__youtube" width="60" height="60" alt="YouTube">
+                    <img src="YouTube.svg" class="footer__youtube" width="40" height="40" alt="YouTube">
                 </a>
             </div>
             <div class="lisence">© 2023 Rina Akaboshi</div>
