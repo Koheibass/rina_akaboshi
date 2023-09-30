@@ -12,7 +12,9 @@
         href="https://fonts.googleapis.com/css2?family=Castoro&family=Noto+Serif+JP:wght@300&family=Parisienne&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/modal-video@2.4.8/css/modal-video.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/modal-video@2.4.8/js/jquery-modal-video.min.js"></script>
     <style>
@@ -40,15 +42,15 @@
                         </div>
                         <div class="header__icon">
                             <a href="https://www.instagram.com/akaboshi_rina/" class="instagram">
-                                <img src="Instagram.svg" width="24" height="24" alt="instagram">
+                                <img src="Instagram.svg" width="20" height="20" alt="instagram">
                             </a>
                             <a href="https://www.youtube.com/@akaboshirina" class="youtube">
-                                <img src="YouTube.svg" width="33" height="33" alt="YouTube">
+                                <img src="YouTube.svg" width="28" height="28" alt="YouTube">
                             </a>
                         </div>
                         <ul class="dropdown">
                             <li class="dropdown__content">
-                                <a class="dropdown__menu__link">Japanese</a>
+                                <a href="/" class="dropdown__menu__link">Japanese</a>
                                 <ul class="dropdown__menu">
                                     <li class="dropdown__menu__item"><a href="index.html"
                                             class="drop-menu__link">Japanese</a></li>
@@ -58,9 +60,10 @@
                             </li>
                         </ul>
                         <div class="hamburger">
-                            <span class="hamburger__line hamburger__line--1"></span>
-                            <span class="hamburger__line hamburger__line--2"></span>
-                            <span class="hamburger__line hamburger__line--3"></span>
+                            <span>
+                                <img src="/photo/piano.svg" width="25" height="25" alt="piano">
+                            </span>
+                            <p class="piano-menu">menu</p>
                         </div>
                     </div>
                     <ul class="slide-menu">
@@ -73,15 +76,19 @@
                 </div>
             </div>
         </nav>
-        <div class="css-carousel-slider3">
-            <div class="slide-wrap-main">
-                <div class="slide"><img src="/photo/hero1.webp" width="100%" alt=""></div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/photo/hero1.webp" width="100%" height="auto">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/photo/hero2.webp" width="100%" height="auto">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/photo/hero3.webp" width="100%" height="auto">
+                </div>
             </div>
-            <div class="slide-wrap">
-                <div class="slide"><img src="/photo/hero1.webp" width="100%" alt=""></div>
-                <div class="slide"><img src="/photo/hero2.webp" width="100%" alt=""></div>
-                <div class="slide"><img src="/photo/hero3.webp" width="100%" alt=""></div>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
         <main class="main">
             <section class="section_mews">
@@ -581,6 +588,19 @@
                 playsinline: 0,
             }
         });
+
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: true,
+            speed: 2000,
+            slidesPerView: 1,
+            // ページネーション
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        })
+
     </script>
 </body>
 
