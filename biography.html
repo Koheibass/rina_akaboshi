@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,9 @@
         href="https://fonts.googleapis.com/css2?family=Castoro&family=Noto+Serif+JP:wght@300&family=Parisienne&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/modal-video@2.4.8/css/modal-video.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/modal-video@2.4.8/js/jquery-modal-video.min.js"></script>
     <style>
@@ -40,15 +42,15 @@
                         </div>
                         <div class="header__icon">
                             <a href="https://www.instagram.com/akaboshi_rina/" class="instagram">
-                                <img src="Instagram.svg" width="24" height="24" alt="instagram">
+                                <img src="Instagram.svg" width="20" height="20" alt="instagram">
                             </a>
                             <a href="https://www.youtube.com/@akaboshirina" class="youtube">
-                                <img src="YouTube.svg" width="33" height="33" alt="YouTube">
+                                <img src="YouTube.svg" width="28" height="28" alt="YouTube">
                             </a>
                         </div>
                         <ul class="dropdown">
                             <li class="dropdown__content">
-                                <a class="dropdown__menu__link">Japanese</a>
+                                <a href="/" class="dropdown__menu__link">Japanese</a>
                                 <ul class="dropdown__menu">
                                     <li class="dropdown__menu__item"><a href="index.html"
                                             class="drop-menu__link">Japanese</a></li>
@@ -58,9 +60,10 @@
                             </li>
                         </ul>
                         <div class="hamburger visibility-hidden">
-                            <span class="hamburger__line hamburger__line--1"></span>
-                            <span class="hamburger__line hamburger__line--2"></span>
-                            <span class="hamburger__line hamburger__line--3"></span>
+                            <span>
+                                <img src="/photo/piano.svg" width="25" height="25" alt="piano">
+                            </span>
+                            <p class="piano-menu">menu</p>
                         </div>
                     </div>
                     <ul class="slide-menu">
@@ -73,7 +76,7 @@
                 </div>
             </div>
         </nav>
-        <main>
+        <main class="main">
             <h2 class="element__title">
                 <div>プロフィール</div>
                 <div class="translate">Biography</div>
@@ -112,24 +115,24 @@
                             <br>
                             現在は、自身の演奏に関する研究活動や後進の育成とともに、クラシック音楽界に貢献すべく活動の幅を広げている。
                         </p>
-                    </div>
-                    <div class="return">
-                        <a class="return__content" href="index.html">Topに戻る</a>
-                    </div>
-                    <div class="footer">
-                        <div class="footer__content">
-                            <a href="https://www.instagram.com/akaboshi_rina/">
-                                <img src="Instagram.svg" class="footer__instagram" width="30" height="30" alt="twitter">
-                            </a>
-                            <a href="https://www.youtube.com/@akaboshirina">
-                                <img src="YouTube.svg" class="footer__youtube" width="40" height="40" alt="YouTube">
-                            </a>
+                        <div class="return">
+                            <a class="return__content" href="index.html">Topに戻る</a>
                         </div>
-                        <div class="lisence">© 2023 Rina Akaboshi</div>
                     </div>
                 </div>
             </div>
         </main>
+        <div class="footer">
+            <div class="footer__content">
+                <a href="https://www.instagram.com/akaboshi_rina/">
+                    <img src="Instagram.svg" class="footer__instagram" width="50" height="50" alt="twitter">
+                </a>
+                <a href="https://www.youtube.com/@akaboshirina">
+                    <img src="YouTube.svg" class="footer__youtube" width="60" height="60" alt="YouTube">
+                </a>
+            </div>
+            <div class="lisence">© 2023 Rina Akaboshi</div>
+        </div>
     </div>
     <script>
         const japaneseProfile = `<div class="main__profile" id="profile">
@@ -149,8 +152,12 @@
                             <br>
                             現在は、自身の演奏に関する研究活動や後進の育成とともに、クラシック音楽界に貢献すべく活動の幅を広げている。
                         </p>
+                    </div><div class="return">
+                        <a class="return__content" href="index.html">Topに戻る</a>
                     </div>`;
-        const englishProfile = `Born in Shiga, Japan in 1989, Rina Akaboshi started taking piano lessons at the age of two. In 2002, she was awarded in Duet with her sister, Kana Akaboshi at 26th PTNA Piano Competition. (First place of all Middle-Level in Western Japan, then the Honorable Mention at the Whole Japan Finals.) While in high school, she won Second Place in 21st Shiga-Prefecture High School Piano Competition. During her college years, she was selected to have concerts regularly, and attended at the New Performer Concerts. While a Sophomore, she received First Place in 29th Aichi Piano Competition and Chunichi-News Paper Grand Award. During her Senior year, she won the Espoir Award at Age-U Piano Section of 14th Osaka International Music Competition. Upon obtaining the BA in Music at Aichi Music & Arts University, she received Rotary Club Scholarship, and attended the master’s degree courses in Germany, and graduated Rostock University of Music and Theatre with the most honor. While in school, she was also awarded Ad Infinitum Foundation Scholarship, and started performing vigorously in Germany and in Japan. She has taken numerous master’s classes and was enlightened by respected pianists such as Lilya Zilberstein, Jacques Rouvier, and Pavel Gililov. In 2017, she was the semi-finalist at Giorgos Thymis International 　 Piano Competition in Greece, where judges were Cyprien Katsaris and Eliso Virsaladze. In 2018, her first solo album, “Neue Welt – New World” was released in Japan. So far, she has studied under Prof.Suguru Kawae, Prof.Atsushi Kitazumi, Prof.Bernd Zack, Ms.Aya Matsushita and Prof.Yu Kakuno. Her concert activities continue while studying under Yuya Tsuda at Tokyo Art University (Graduate-level Special Course), and also teaching professional level students.`;
+        const englishProfile = `<div class="main__profile" id="profile"> in Shiga, Japan in 1989, Rina Akaboshi started taking piano lessons at the age of two. In 2002, she was awarded in Duet with her sister, Kana Akaboshi at 26th PTNA Piano Competition. (First place of all Middle-Level in Western Japan, then the Honorable Mention at the Whole Japan Finals.) While in high school, she won Second Place in 21st Shiga-Prefecture High School Piano Competition. During her college years, she was selected to have concerts regularly, and attended at the New Performer Concerts. While a Sophomore, she received First Place in 29th Aichi Piano Competition and Chunichi-News Paper Grand Award. During her Senior year, she won the Espoir Award at Age-U Piano Section of 14th Osaka International Music Competition. Upon obtaining the BA in Music at Aichi Music & Arts University, she received Rotary Club Scholarship, and attended the master’s degree courses in Germany, and graduated Rostock University of Music and Theatre with the most honor. While in school, she was also awarded Ad Infinitum Foundation Scholarship, and started performing vigorously in Germany and in Japan. She has taken numerous master’s classes and was enlightened by respected pianists such as Lilya Zilberstein, Jacques Rouvier, and Pavel Gililov. In 2017, she was the semi-finalist at Giorgos Thymis International 　 Piano Competition in Greece, where judges were Cyprien Katsaris and Eliso Virsaladze. In 2018, her first solo album, “Neue Welt – New World” was released in Japan. So far, she has studied under Prof.Suguru Kawae, Prof.Atsushi Kitazumi, Prof.Bernd Zack, Ms.Aya Matsushita and Prof.Yu Kakuno. Her concert activities continue while studying under Yuya Tsuda at Tokyo Art University (Graduate-level Special Course), and also teaching professional level students.</div><div class="return">
+                        <a class="return__content" href="/english/indexen.html">Top</a>
+                    </div>`;
 
         function switchToJapanese() {
             document.getElementById("profile").innerHTML = japaneseProfile;

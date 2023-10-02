@@ -158,7 +158,7 @@ a {
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 0.25em;
     color: #937a43;
     font-family: 'Noto Serif JP', serif;
@@ -261,7 +261,7 @@ a {
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
     color: #937a43;
 }
@@ -330,7 +330,7 @@ a {
     font-weight: 700;
     font-size: 28px;
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
     margin: 0;
     color: #937a43;
@@ -457,6 +457,10 @@ button {
     text-decoration: none;
 }
 
+.biography__photo {
+    border-radius: 10px;
+}
+
 .biography__button__content__japanese {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -576,6 +580,10 @@ button {
 .concert-days {
     font-weight: 700;
     color: #937a43;
+}
+
+.concert-photo {
+    border-radius: 10px;
 }
 
 .concert-detail {
@@ -870,7 +878,7 @@ b {
 
 .footer__instagram {
     display: inline-block;
-    padding-top: 10px;
+    padding-top: 13px;
 }
 
 .footer__youtube {
@@ -953,6 +961,7 @@ b {
 
 .return__content {
     text-decoration-line: underline;
+    color: rgb(255, 154, 154);
 }
 
 ul {
