@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ピアニスト赤星 里奈 公式ウェブサイト - Pianist Rina Akaboshi</title>
-    <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Castoro&family=Noto+Serif+JP:wght@300&family=Parisienne&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/modal-video@2.4.8/css/modal-video.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+        type="text/javascript"></script>
 
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/modal-video@2.4.8/js/jquery-modal-video.min.js"></script>
     <style>
@@ -30,29 +32,29 @@
             <div>
                 <div class="header__whole">
                     <div class="header__left">
-                        <a class="header__title" href="/english/indexen.html">Rina Akaboshi</a>
+                        <a class="header__title" href="/">Rina Akaboshi</a>
                     </div>
                     <div class="header__right">
                         <div class="header__menu">
-                            <a href="#biography">Biography</a>
-                            <a href="#concert">Concerts</a>
-                            <a href="#media">Media</a>
-                            <a href="#recordings">Recordings</a>
-                            <a href="#contact">Contact</a>
+                            <a href="#biography">プロフィール</a>
+                            <a href="#concert">コンサート</a>
+                            <a href="#media">メディア</a>
+                            <a href="#recordings">CD</a>
+                            <a href="#contact">お問い合わせ</a>
                         </div>
                         <div class="header__icon">
                             <a href="https://www.instagram.com/akaboshi_rina/" class="instagram">
-                                <img src="/Instagram.svg" width="20" height="20" alt="instagram">
+                                <img src="Instagram.svg" width="20" height="20" alt="instagram">
                             </a>
                             <a href="https://www.youtube.com/@akaboshirina" class="youtube">
-                                <img src="/YouTube.svg" width="28" height="28" alt="YouTube">
+                                <img src="YouTube.svg" width="28" height="28" alt="YouTube">
                             </a>
                         </div>
                         <ul class="dropdown">
                             <li class="dropdown__content">
-                                <a href="/english/indexen.html" class="dropdown__menu__link">English</a>
+                                <a href="/" class="dropdown__menu__link">Japanese</a>
                                 <ul class="dropdown__menu">
-                                    <li class="dropdown__menu__item"><a href="../index.html"
+                                    <li class="dropdown__menu__item"><a href="index.html"
                                             class="drop-menu__link">Japanese</a></li>
                                     <li class="dropdown__menu__item"><a href="/english/indexen.html"
                                             class="drop-menu__link">English</a></li>
@@ -60,18 +62,17 @@
                             </li>
                         </ul>
                         <div class="hamburger visibility-hidden">
-                            <span>
-                                <img src="/photo/piano.svg" width="25" height="25" alt="piano">
-                            </span>
-                            <p class="piano-menu">menu</p>
+                            <span class="hamburger__line hamburger__line--1"></span>
+                            <span class="hamburger__line hamburger__line--2"></span>
+                            <span class="hamburger__line hamburger__line--3"></span>
                         </div>
                     </div>
                     <ul class="slide-menu">
-                        <li><a href="#biography" class="slide-menu1">Biography</a></li>
-                        <li><a href="#concerts" class="slide-menu2">Concerts</a></li>
-                        <li><a href="#media" class="slide-menu3">Media</a></li>
-                        <li><a href="#recordings" class="slide-menu4">Recordings</a></li>
-                        <li><a href="#contact" class="slide-menu5">Contact</a></li>
+                        <li><a href="#biography" class="slide-menu1">プロフィール</a></li>
+                        <li><a href="#concerts" class="slide-menu2">コンサート</a></li>
+                        <li><a href="#media" class="slide-menu3">メディア</a></li>
+                        <li><a href="#recordings" class="slide-menu4">CD</a></li>
+                        <li><a href="#contact" class="slide-menu5">お問い合わせ</a></li>
                     </ul>
                 </div>
             </div>
@@ -79,112 +80,62 @@
         <main>
             <section class="section_media">
                 <h2 class="element__title" id="media">
-                    <div>Media</div>
+                    <div>メディア</div>
                     <div class="translate">Media</div>
                 </h2>
                 <div class="media__button">
                     <button onClick="switchToMovie();removeClassToMovie()" id="MovieLeft"
-                        class="movie-button activate">Movie</button>
+                        class="movie-button">動画</button>
                     <button onClick="switchToPhoto();addClassToPhoto()" id="PhotoRight"
-                        class="photo-button">Photo</button>
+                        class="photo-button activate">写真</button>
                 </div>
-                <div class="media__content" id="medialist">
-                    <div class="media__list">
-                        <div>
-                            <div class="top-movie" data-video-id="4Tr9Y_rOfh4">
-                                <img alt="video" class="top-movie2" src="/Lebewohl.jpg" width="100%">
-                                <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
-                                </div>
-                            </div>
-                            <div class="individual-videos">
-                                L.v.Beethoven : Piano Sonata No.26 Es-Dur Op.81a "Lebewohl"
-                            </div>
-                        </div>
-                        <div>
-                            <div class="top-movie" data-video-id="n-B9BzPxbzk">
-                                <img alt="video" class="top-movie2" src="/Widmung.jpg" width="100%">
-                                <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
-                                </div>
-                            </div>
-                            <div class="individual-videos">Schumann-Liszt : Widmung with NewYork Steinway Piano</div>
-                        </div>
-                        <div>
-                            <div class="top-movie" data-video-id="IkZB4TZtUAM">
-                                <img alt="video" class="top-movie2" src="/blackkeys.jpg" width="100%">
-                                <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
-                                </div>
-                            </div>
-                            <div class="individual-videos">F.Chopin : Etude op.10-5 Ges-dur "Black keys"</div>
-                        </div>
-                        <div>
-                            <div class="top-movie" data-video-id="66Fel4dySJ8">
-                                <img alt="video" class="top-movie2" src="/Impromptus.jpg" width="100%">
-                                <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
-                                </div>
-                            </div>
-                            <div class="individual-videos">F.Schubert : Impromptus No.3 Ges-Dur Op.90-3 D 899</div>
-                        </div>
-                        <div>
-                            <div class="top-movie" data-video-id="Cq0A7z6Ov24">
-                                <img alt="video" class="top-movie2" src="/photo/Barcarolle.jpg" width="100%">
-                                <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
-                                </div>
-                            </div>
-                            <div class="individual-videos">F.Chopin : Barcarolle op.60 Fis-dur with Steinway Piano</div>
-                        </div>
-                        <div>
-                            <div class="top-movie" data-video-id="Z89P1TQiEHM">
-                                <img alt="video" class="top-movie2" src="/photo/119.jpg" width="100%">
-                                <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
-                                </div>
-                            </div>
-                            <div class="individual-videos">J.Brahms : 4 Klavierstücke op.119</div>
-                        </div>
-                        <div>
-                            <div class="top-movie" data-video-id="K5D_2XrDhiQ">
-                                <img alt="video" class="top-movie2" src="/photo/waldstein.jpg" width="100%">
-                                <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
-                                </div>
-                            </div>
-                            <div class="individual-videos">L.v.Beethoven : Piano Sonata No.21 "Waldstein" 1.mov Allegro
-                                con brio</div>
-                        </div>
-                        <div>
-                            <div class="top-movie" data-video-id="7wDfVUm4-B0">
-                                <img alt="video" class="top-movie2" src="/photo/118.jpg" width="100%">
-                                <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
-                                </div>
-                            </div>
-                            <div class="individual-videos">J.Brahms : Klavierstücke op.118</div>
+                <div id="medialist">
+                    <div>
+                        <div class="photo-list">
+                            <a href="photo1.webp" data-lightbox="group">
+                                <img src="photo1.webp" class="photo__detail">
+                            </a>
+                            <a href="photo2.webp" data-lightbox="group">
+                                <img src="photo2.webp" class="photo__detail">
+                            </a>
+                            <a href="photo3.webp" data-lightbox="group">
+                                <img src="photo3.webp" class="photo__detail">
+                            </a>
+                            <a href="photo4.webp" data-lightbox="group">
+                                <img src="photo4.webp" class="photo__detail">
+                            </a>
+                            <a href="/photo/hero1.webp" data-lightbox="group">
+                                <img src="/photo/hero1.webp" class="photo__detail">
+                            </a>
+                            <a href="/photo/hero2.webp" data-lightbox="group">
+                                <img src="/photo/hero2.webp" class="photo__detail">
+                            </a>
+                            <a href="/photo/hero3.webp" data-lightbox="group">
+                                <img src="/photo/hero3.webp" class="photo__detail">
+                            </a>
+                            <a href="biography.webp" data-lightbox="group">
+                                <img src="biography.webp" class="photo__detail">
+                            </a>
+                            <a href="concert1.webp" data-lightbox="group">
+                                <img src="concert1.webp" class="photo__detail">
+                            </a>
+                            <a href="/photo/concert2.webp" data-lightbox="group">
+                                <img src="/photo/concert2.webp" class="photo__detail">
+                            </a>
+                        </div><br>
+                        <div class="return">
+                            <a class="return__content" href="index.html">Topに戻る</a>
                         </div>
                     </div>
-                    <div class="top__button">
-                        <button class="top__button__content">
-                            <a href="https://www.youtube.com/@PianistRinaAkaboshi">> And More</a>
-                        </button>
-                    </div>
-                    <br>
-                    <div class="return">
-                        <a class="return__content" href="index.html">Top</a>
-                    </div>
-                </div>
             </section>
         </main>
         <div class="footer">
             <div class="footer__content">
                 <a href="https://www.instagram.com/akaboshi_rina/">
-                    <img src="../Instagram.svg" class="footer__instagram" width="40" height="50" alt="twitter">
+                    <img src="Instagram.svg" class="footer__instagram" width="40" height="50" alt="twitter">
                 </a>
                 <a href="https://www.youtube.com/@akaboshirina">
-                    <img src="../YouTube.svg" class="footer__youtube" width="60" height="60" alt="YouTube">
+                    <img src="YouTube.svg" class="footer__youtube" width="60" height="60" alt="YouTube">
                 </a>
             </div>
             <div class="lisence">© 2023 Rina Akaboshi</div>
@@ -256,106 +207,106 @@
             document.getElementById('UpcomingLeft').classList.add('activate');
         }
 
-        const movieNote = `<div class="media__content" id="medialist">
+        const movieNote = `<div class="media__content">
                     <div class="media__list">
                         <div>
                             <div class="top-movie" data-video-id="4Tr9Y_rOfh4">
-                                <img alt="video" class="top-movie2" src="/Lebewohl.jpg" width="100%">
+                                <img alt="video" class="top-movie2" src="Lebewohl.jpg" width="100%">
                                 <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
+                                    <img src="playmovie.svg" width="20%">
                                 </div>
                             </div>
                             <div class="individual-videos">
-                                L.v.Beethoven : Piano Sonata No.26 Es-Dur Op.81a "Lebewohl"
+                                ベートーヴェン : ピアノソナタ第26番「告別」op.81a
                             </div>
                         </div>
                         <div>
                             <div class="top-movie" data-video-id="n-B9BzPxbzk">
-                                <img alt="video" class="top-movie2" src="/Widmung.jpg" width="100%">
+                                <img alt="video" class="top-movie2" src="Widmung.jpg" width="100%">
                                 <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
+                                    <img src="playmovie.svg" width="20%">
                                 </div>
                             </div>
-                            <div class="individual-videos">Schumann-Liszt : Widmung with NewYork Steinway Piano</div>
+                            <div class="individual-videos">シューマン＝リスト : 献呈</div>
                         </div>
                         <div>
                             <div class="top-movie" data-video-id="IkZB4TZtUAM">
-                                <img alt="video" class="top-movie2" src="/blackkeys.jpg" width="100%">
+                                <img alt="video" class="top-movie2" src="blackkeys.jpg" width="100%">
                                 <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
+                                    <img src="playmovie.svg" width="20%">
                                 </div>
                             </div>
-                            <div class="individual-videos">F.Chopin : Etude op.10-5 Ges-dur "Black keys"</div>
+                            <div class="individual-videos">ショパン : 練習曲集op.10よりNo.5「黒鍵」</div>
                         </div>
                         <div>
                             <div class="top-movie" data-video-id="66Fel4dySJ8">
-                                <img alt="video" class="top-movie2" src="/Impromptus.jpg" width="100%">
+                                <img alt="video" class="top-movie2" src="Impromptus.jpg" width="100%">
                                 <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
+                                    <img src="playmovie.svg" width="20%">
                                 </div>
                             </div>
-                            <div class="individual-videos">F.Schubert : Impromptus No.3 Ges-Dur Op.90-3 D 899</div>
+                            <div class="individual-videos">シューベルト：即興曲 第3番 D899 op.90-3 変ト長調</div>
                         </div>
                         <div>
                             <div class="top-movie" data-video-id="Cq0A7z6Ov24">
                                 <img alt="video" class="top-movie2" src="/photo/Barcarolle.jpg" width="100%">
                                 <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
+                                    <img src="playmovie.svg" width="20%">
                                 </div>
                             </div>
-                            <div class="individual-videos">F.Chopin : Barcarolle op.60 Fis-dur with Steinway Piano</div>
+                            <div class="individual-videos">ショパン：舟歌 作品60 嬰ヘ長調</div>
                         </div>
                         <div>
                             <div class="top-movie" data-video-id="Z89P1TQiEHM">
                                 <img alt="video" class="top-movie2" src="/photo/119.jpg" width="100%">
                                 <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
+                                    <img src="playmovie.svg" width="20%">
                                 </div>
                             </div>
-                            <div class="individual-videos">J.Brahms : 4 Klavierstücke op.119</div>
+                            <div class="individual-videos">ブラームス：ピアノのための４つの小品 作品119</div>
                         </div>
                         <div>
                             <div class="top-movie" data-video-id="K5D_2XrDhiQ">
                                 <img alt="video" class="top-movie2" src="/photo/waldstein.jpg" width="100%">
                                 <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
+                                    <img src="playmovie.svg" width="20%">
                                 </div>
                             </div>
-                            <div class="individual-videos">L.v.Beethoven : Piano Sonata No.21 "Waldstein" 1.mov Allegro con brio</div>
+                            <div class="individual-videos">ベートーヴェン : ピアノソナタ 第21番「ワルトシュタイン」 Op.53 第1楽章</div>
                         </div>
                         <div>
                             <div class="top-movie" data-video-id="7wDfVUm4-B0">
                                 <img alt="video" class="top-movie2" src="/photo/118.jpg" width="100%">
                                 <div class="movie-play">
-                                    <img src="../playmovie.svg" width="20%">
+                                    <img src="playmovie.svg" width="20%">
                                 </div>
                             </div>
-                            <div class="individual-videos">J.Brahms : Klavierstücke op.118</div>
+                            <div class="individual-videos">ブラームス：ピアノのための６つの小品 Op.118</div>
                         </div>
                     </div>
                     <div class="top__button">
                         <button class="top__button__content">
                             <a href="https://www.youtube.com/@PianistRinaAkaboshi">> And More</a>
                         </button>
-                    </div>
-                    <br>
+                    </div><br>
                     <div class="return">
-                        <a class="return__content" href="index.html">Top</a>
-                    </div>`;
+                        <a class="return__content" href="index.html">Topに戻る</a>
+                    </div>
+                </div>`;
         const photoNote = `<div class="photo-list">
-        <img src="../photo1.webp" class="photo__detail">
-        <img src="../photo2.webp" class="photo__detail">
-        <img src="../photo3.webp" class="photo__detail">
-        <img src="../photo4.webp" class="photo__detail">
+        <img src="photo1.webp" class="photo__detail">
+        <img src="photo2.webp" class="photo__detail">
+        <img src="photo3.webp" class="photo__detail">
+        <img src="photo4.webp" class="photo__detail">
         <img src="/photo/hero1.webp" class="photo__detail">
         <img src="/photo/hero2.webp" class="photo__detail">
         <img src="/photo/hero3.webp" class="photo__detail">
-        <img src="../biography.webp" class="photo__detail">
-        <img src="../concert1.webp" class="photo__detail">
+        <img src="biography.webp" class="photo__detail">
+        <img src="concert1.webp" class="photo__detail">
         <img src="/photo/concert2.webp" class="photo__detail">
       </div><br>
                     <div class="return">
-                        <a class="return__content" href="index.html">Top</a>
+                        <a class="return__content" href="index.html">Topに戻る</a>
                     </div>
       `;
 

@@ -1,12 +1,22 @@
-<!doctype html>
-<html lang="ja">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header Sample</title>
-    <link rel="stylesheet" href="../css/mobile.css">
+    <title>ピアニスト赤星 里奈 公式ウェブサイト - Pianist Rina Akaboshi</title>
+    <link rel="stylesheet" href="/css/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Castoro&family=Noto+Serif+JP:wght@300&family=Parisienne&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/modal-video@2.4.8/css/modal-video.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/modal-video@2.4.8/js/jquery-modal-video.min.js"></script>
     <style>
         body {
             margin: 0;
@@ -24,31 +34,49 @@
                     </div>
                     <div class="header__right">
                         <div class="header__menu">
-                            <a href="#prof">Biorgraphy</a>
-                            <a href="#concert">Concerts</a>
-                            <a href="#media">Media</a>
-                            <a href="#CD">Recordings</a>
-                            <a href="#contact">Contact</a>
+                            <a href="#biography">プロフィール</a>
+                            <a href="#concert">コンサート</a>
+                            <a href="#media">メディア</a>
+                            <a href="#recordings">CD</a>
+                            <a href="#contact">お問い合わせ</a>
                         </div>
                         <div class="header__icon">
                             <a href="https://www.instagram.com/akaboshi_rina/" class="instagram">
-                                <img src="../Instagram.svg" width="24" height="24" alt="instagram">
+                                <img src="/Instagram.svg" width="20" height="20" alt="instagram">
                             </a>
                             <a href="https://www.youtube.com/@akaboshirina" class="youtube">
-                                <img src="../YouTube.svg" width="33" height="33" alt="YouTube">
+                                <img src="/YouTube.svg" width="28" height="28" alt="YouTube">
                             </a>
                         </div>
-                        <button class="header__button">Japanese</button>
-                        <div class="hamburger" id="js-hamburger">
-                            <span class="hamburger__line hamburger__line--1"></span>
-                            <span class="hamburger__line hamburger__line--2"></span>
-                            <span class="hamburger__line hamburger__line--3"></span>
+                        <ul class="dropdown">
+                            <li class="dropdown__content">
+                                <a href="/english/indexen.html" class="dropdown__menu__link">English</a>
+                                <ul class="dropdown__menu">
+                                    <li class="dropdown__menu__item"><a href="../index.html"
+                                            class="drop-menu__link">Japanese</a></li>
+                                    <li class="dropdown__menu__item"><a href="/english/indexen.html"
+                                            class="drop-menu__link">English</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="hamburger visibility-hidden">
+                            <span>
+                                <img src="/photo/piano.svg" width="25" height="25" alt="piano">
+                            </span>
+                            <p class="piano-menu">menu</p>
                         </div>
                     </div>
+                    <ul class="slide-menu">
+                        <li><a href="#biography" class="slide-menu1">Biography</a></li>
+                        <li><a href="#concerts" class="slide-menu2">Concerts</a></li>
+                        <li><a href="#media" class="slide-menu3">Media</a></li>
+                        <li><a href="#recordings" class="slide-menu4">Recordings</a></li>
+                        <li><a href="#contact" class="slide-menu5">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
-        <main>
+        <main class="main">
             <h2 class="element__title">
                 <div>Biography</div>
                 <div class="translate">Biography</div>
@@ -82,50 +110,24 @@
                             under Prof.Suguru Kawae, Prof.Atsushi Kitazumi, Prof.Bernd Zack, Ms.Aya Matsushita and
                             Prof.Yu Kakuno. Her concert activities continue while studying under Yuya Tsuda at Tokyo Art
                             University (Graduate-level Special Course), and also teaching professional level students.
-                    </div>
-                    <div class="return">
-                        <a class="return__content" href="/english/indexen.html">Topに戻る</a>
-                    </div>
-                    <div class="footer">
-                        <div class="footer__content">
-                            <a href="https://www.instagram.com/akaboshi_rina/">
-                                <img src="../Instagram.svg" class="footer__instagram" width="30" height="30"
-                                    alt="twitter">
-                            </a>
-                            <a href="https://www.youtube.com/@akaboshirina">
-                                <img src="../YouTube.svg" class="footer__youtube" width="40" height="40" alt="YouTube">
-                            </a>
+                        </p>
+                        <div class="return">
+                            <a class="return__content" href="/english/indexen.html">Top</a>
                         </div>
-                        <div class="lisence">© 2023 Rina Akaboshi</div>
                     </div>
-                    <script>
-                        const japaneseProfile = `1989 年滋賀県に生まれ、2 歳より音楽教室にてピアノを始める。2002 年、妹の赤星佳奈とのデュオで第 26
-                            回ピティナピアノコンペティションデュオ中級西日本大会第一位、全国決勝大会奨励賞受賞。高校在学中には第 21 回滋賀県高校生ピアノコンクールにて第二位となる。
-                            <br>
-                            愛知県立芸術大学音楽学部に在学中には、選抜され定期演奏会や新進演奏家コンサートなどに出演。大学 3 年生時に第 29
-                            回愛知ピアノコンクールにて金賞、中日新聞社賞を受賞し、優勝する。また大学 4 年生時には第 14 回大阪国際音楽コンクールピアノ Age-U 部門にてエスポワール賞を受賞。
-                            <br>
-                            学部卒業後、ロータリー財団地区補助金奨学金を受け、ドイツ国立ロストック音楽演劇大学修士課程に入学、最優秀の成績で修了する。在学中、オーディションにて選出され Ad infinitum
-                            faundation の奨学生となる。この頃から日本、ドイツで積極的に演奏活動を行う。在独中には様々なマスタークラスに参加し、リーリャ ジルベルシュタイン、ジャック ルヴィエ、パヴェル
-                            ギリロフなどの著名なピアニストより多くのことを吸収する。2017 年にはシプリアン カツァリスやエリソ ヴィルサラーゼが審査員を務める Giorgos Thymis
-                            国際ピアノコンクール（ギリシャ）にてセミファイナリストとなる。帰国後の 2018 年、初のソロアルバム「Neue
-                            Welt〜新しい世界〜」をリリース。2022年、東京藝術大学音楽学部別科修了。
-                            <br>
-                            これまでに、福留真循、多川響子、河江優、服部久美子、北住淳、Bernd Zack、松下彩、角野裕、津田裕也の各氏に師事。
-                            <br>
-                            現在は、自身の演奏に関する研究活動や後進の育成とともに、クラシック音楽界に貢献すべく活動の幅を広げている。`;
-                        const englishProfile = `Rina Akaboshi is a classical concert pianist. Although her forte is German music, her recent focus has been on broadening her repertoire with French and Russian music. She has a reputation for pursuing a mature expression and deep musicality, while exploring techniques in-depth to discover the ideal touch to bring out new possibilities in every tone.
-                    After receiving numerous awards in both national and international competitions, in 2018, her first solo album, “Neue Welt – New World” was released. Her concert activities continue while studying under Mr. Yuya Tsuda, one of the most appreciated pianists in Japan, at Tokyo Art University (Graduate-level special course).`;
-
-                        function switchToJapanese() {
-                            document.getElementById("profile").innerHTML = japaneseProfile;
-                            document.getElementById("profile").classList = "japanese";
-                        }
-
-                        function switchToEnglish() {
-                            document.getElementById("profile").innerHTML = englishProfile;
-                            document.getElementById("profile").classList = "english";
-                        }
-                    </script>
                 </div>
+            </div>
+        </main>
+        <div class="footer">
+            <div class="footer__content">
+                <a href="https://www.instagram.com/akaboshi_rina/">
+                    <img src="../Instagram.svg" class="footer__instagram" width="40" height="50" alt="twitter">
+                </a>
+                <a href="https://www.youtube.com/@akaboshirina">
+                    <img src="../YouTube.svg" class="footer__youtube" width="60" height="60" alt="YouTube">
+                </a>
+            </div>
+            <div class="lisence">© 2023 Rina Akaboshi</div>
+        </div>
+    </div>
 </body>
