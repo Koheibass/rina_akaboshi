@@ -827,6 +827,14 @@ b {
     margin: auto;
 }
 
+select {
+    appearance: none;
+    background-color: white;
+    border: solid 1px;
+    padding: 0 0.5rem 0 0.5rem;
+
+}
+
 .contact__frame__type {
     border-radius: 0.25rem;
     width: 95%;
