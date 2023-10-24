@@ -1,0 +1,9 @@
+{
+    "redirects": [
+        {
+            "source": "/biography",
+            "destination": "/biography.html",
+            "permanent": true
+        }
+    ]
+}

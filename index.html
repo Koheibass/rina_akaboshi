@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ピアニスト赤星 里奈 公式ウェブサイト - Pianist Rina Akaboshi</title>
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:844px)">
+    <link rel="stylesheet" href="css/mobile2.css" media="screen and (min-width:1024px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -34,11 +35,11 @@
                     </div>
                     <div class="header__right">
                         <div class="header__menu">
-                            <a href="#biography">プロフィール</a>
-                            <a href="#concert">コンサート</a>
-                            <a href="#media">メディア</a>
-                            <a href="#recordings">CD</a>
-                            <a href="#contact">お問い合わせ</a>
+                            <a href="#biography" class="menu__biography">プロフィール</a>
+                            <a href="#concerts" class="menu__concerts">コンサート</a>
+                            <a href="#media" class="menu__media">メディア</a>
+                            <a href="#recordings" class="menu__recordings">CD</a>
+                            <a href="#contact" class="menu__contact">お問い合わせ</a>
                         </div>
                         <div class="header__icon">
                             <a href="https://www.instagram.com/akaboshi_rina/" class="instagram">
@@ -79,7 +80,7 @@
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="/photo/hero1.webp" width="100%" height="auto">
+                    <img src="/photo/hero1.webp" class="top__photo1" width="100%" height="auto">
                 </div>
                 <div class="swiper-slide">
                     <img src="/photo/hero2.webp" width="100%" height="auto">
@@ -91,7 +92,7 @@
             <div class="swiper-pagination"></div>
         </div>
         <main class="main">
-            <section class="section_mews">
+            <section class="section_news">
                 <div class="news">
                     <div class="news__title">NEWS</div>
                     <a href="https://oto-inochi.com/" class="top__news">
@@ -118,7 +119,7 @@
                             </div>
                             <a href="/news/2023801.html" class="info_detail">みんなの挑戦をあたたかく見守る場所“おといのち音楽会”開催決定</a>
                         </div>
-                        <div class="top__button">
+                        <div class="top__button__updates">
                             <button class="top__button__content">
                                 <a href="topnews.html">> もっと見る</a>
                             </button>
@@ -134,7 +135,7 @@
                             <div class="top-movie" data-video-id="4Tr9Y_rOfh4">
                                 <img alt="video" class="top-movie2" src="Lebewohl.jpg" width="100%">
                                 <div class="movie-play">
-                                    <img src="playmovie.svg" width="20%">
+                                    <img src="playmovie.svg" width="20%" class="movie-play2">
                                 </div>
                             </div>
                             <div class="top-tracklist">
@@ -192,26 +193,30 @@
                     <div>コンサート</div>
                     <div class="translate">Concerts</div>
                 </h2>
-                <div class="concerts__selector">
-                    <div class="concerts__button">
-                        <button onClick="switchToUpcoming();removeClassToUpcoming()" id="UpcomingLeft"
-                            class="upcoming__button">Upcoming</button>
-                        <button onClick="switchToPast();addClassToPast()" id="PastRight"
-                            class="past__button activate">Past</button>
-                    </div>
-                    <div class="concerts__content" id="Concerts">
+                <div class="concerts__whole">
+                    <div class="concerts__selector">
                         <div>
-                            <div>
-                                <span class="concert-days">2021.06.19</span>
-                                <span class="concert-detail">YouTube / イマチケ</span>
+                            <div class="concerts__button">
+                                <button onClick="switchToUpcoming();removeClassToUpcoming()" id="UpcomingLeft"
+                                    class="upcoming__button">Upcoming</button>
+                                <button onClick="switchToPast();addClassToPast()" id="PastRight"
+                                    class="past__button activate">Past</button>
                             </div>
-                            <a href="concert1.html" class="concert-update">赤星 里奈 ピアノリサイタル vol.1 presented by
-                                "MUSICUM"</a>
+                            <div class="concerts__content" id="Concerts">
+                                <div>
+                                    <div>
+                                        <span class="concert-days">2021.06.19</span>
+                                        <span class="concert-detail">YouTube / イマチケ</span>
+                                    </div>
+                                    <a href="concert1.html" class="concert-update">赤星 里奈 ピアノリサイタル vol.1 presented by
+                                        "MUSICUM"</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <img src="concert1.webp" class="concert-photo" width="100%">
+                    <div>
+                        <img src="concert1.webp" class="concert-photo" width="100%">
+                    </div>
                 </div>
             </section>
             <section class="section_media">
@@ -339,9 +344,9 @@
                         <div>
                             <label class="contact-form2" for="contact-form-type">お問い合わせの種別</label>
                             <select name="type" class="contact__frame__type">
-                                <option value="playrequest">演奏依頼</option>
-                                <option value="request">企業からのご依頼</option>
-                                <option value="others">その他</option>
+                                <option value="演奏依頼">演奏依頼</option>
+                                <option value="企業からのご依頼">企業からのご依頼</option>
+                                <option value="その他">その他</option>
                             </select>
                         </div>
                         <div>
