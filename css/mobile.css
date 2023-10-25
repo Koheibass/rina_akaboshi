@@ -86,6 +86,12 @@
     text-decoration: none;
 }
 
+.top__photo1 {
+    width: 150%;
+    height: 150%;
+}
+
+
 .visibility-hidden {
     visibility: hidden;
 }
@@ -279,6 +285,11 @@ a {
 }
 
 .top-movie2 {
+    filter: grayscale(0.1) brightness(0.7);
+    border-radius: 0.25rem;
+}
+
+.top-movie3 {
     filter: grayscale(0.1) brightness(0.7);
     border-radius: 0.25rem;
 }
