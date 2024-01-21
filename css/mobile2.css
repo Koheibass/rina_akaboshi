@@ -11,7 +11,7 @@
     z-index: 10;
     width: 100%;
     position: sticky;
-    background-color: #ffeeee;
+    background-color: #FFEECC;
 }
 
 .header__whole {
@@ -121,7 +121,7 @@
 
 .main {
     flex-grow: 1;
-    background-color: #fefaff;
+    background-color: hsl(0, 0%, 100%);
     padding-left: 5rem;
     padding-right: 5rem;
 }
@@ -172,7 +172,7 @@
 }
 
 .top__news__content {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 a {
@@ -183,13 +183,13 @@ a {
 .topix {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 3rem;
     margin-top: 2rem;
 }
 
 .info {
     text-align: center;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 1;
     padding-top: 1rem;
@@ -269,6 +269,7 @@ a {
 .info_content {
     display: grid;
     margin-bottom: 1rem;
+    font-size: 20px;
 }
 
 .info_content_detail {
@@ -354,6 +355,7 @@ a {
 
 .top__button {
     text-align: center;
+    font-size: 30px;
 }
 
 .top__button__updates {
@@ -394,6 +396,131 @@ a {
     font-family: 'Noto Serif JP', serif;
 }
 
+.music__friends__course {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.recomend__title {
+    font-size: 30px;
+}
+
+.music__recomend {
+    font-size: 23px;
+    text-align: center;
+}
+
+.music__recomend p {
+    text-align: left;
+    display: inline-block;
+}
+
+.music__friends__content {
+    text-align: center;
+    font-size: 20px;
+    background-color: #FFF7E6;
+}
+
+.music__course__title {
+    text-align: center;
+}
+
+.music__study__content {
+    text-align: center;
+    font-size: 20px;
+    background-color: #FFF7E6;
+}
+
+.box27 {
+    position: relative;
+    margin: 1em;
+    padding: 2em 1em;
+    border: solid 5px #FFF0CF;
+    margin-bottom: 2rem;
+}
+
+.box27 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 25px;
+    background: #FFF0CF;
+    color: #4D483E;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+
+.box27 p {
+    margin: 1;
+    padding: 0;
+    font-size: 20px;
+}
+
+a.btn--orange {
+    color: #4D4A45;
+    background-color: #ffd477;
+    border-bottom: 5px solid #ffc23f;
+    padding: 10px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+a.btn--orange:hover {
+    margin-top: 3px;
+    color: #fff;
+    background: #f56500;
+    border-bottom: 2px solid #b84c00;
+}
+
+a.btn--shadow {
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+
+.step__button {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.price {
+    text-align: center;
+    justify-content: center;
+
+}
+
+.box4 {
+    padding: 8px 19px;
+    margin: 2em 0;
+    color: #2c2c2f;
+    background: #fcf8e1;
+    border-top: solid 5px #FFE8B5;
+    border-bottom: solid 5px #FFE8B5;
+    padding-bottom: 2rem;
+}
+
+.box4 p {
+    margin: 1rem;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.price__detail {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.plan__detail {
+    font-size: 30px;
+}
+
+.attention {
+    font-size: 20px;
+}
+
 .biography__content {
     display: flex;
 }
@@ -402,6 +529,7 @@ a {
     margin-top: 0.5rem;
     color: #937a43;
     padding-left: 20px;
+    font-size: 20px;
 }
 
 .biography__name__japanese {
@@ -642,6 +770,8 @@ button {
 
 .concerts__content {
     margin-bottom: 1rem;
+    margin-right: 2rem;
+    font-size: 20px;
 }
 
 .past {
@@ -654,6 +784,12 @@ button {
 }
 
 .concert-photo {
+    border-radius: 10px;
+    width: 200px;
+    margin-right: 50px;
+}
+
+.concert-photo2 {
     border-radius: 10px;
     width: 500px;
     margin-right: 50px;
@@ -672,6 +808,10 @@ button {
 
 .section_media {
     padding-bottom: 2rem;
+}
+
+.section_biography {
+    margin-bottom: 4rem;
 }
 
 .media__button {
@@ -958,7 +1098,7 @@ select {
     padding-top: 1rem;
     height: 10rem;
     --tw-bg-opacity: 1;
-    background-color: rgb(255 238 238 / var(--tw-bg-opacity));
+    background-color: #FFF7E6;
 }
 
 .footer__content {

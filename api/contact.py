@@ -11,6 +11,10 @@ app = FastAPI()
 @app.get("/api/contact")
 async def read_root(name: str, email: str, message: str, type: str):
     # メール送信
+    if name == "RobertErero":
+        return
+    if type == "????":
+        return
     result = resend.Emails.send(
         {
             "from": "info2@rina-akaboshi.com",

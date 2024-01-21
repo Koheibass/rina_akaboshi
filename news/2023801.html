@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ピアニスト赤星 里奈 公式ウェブサイト - Pianist Rina Akaboshi</title>
-    <link rel="stylesheet" href="/css/mobile.css">
+    <title>おといのち公式</title>
+    <link rel="stylesheet" href="/css/mobile.css" media="screen and (max-width:844px)">
+    <link rel="stylesheet" href="/css/mobile2.css" media="screen and (min-width:1024px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Castoro&family=Noto+Serif+JP:wght@300&family=Parisienne&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/modal-video@2.4.8/css/modal-video.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/jquery@3.6.1/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/modal-video@2.4.8/js/jquery-modal-video.min.js"></script>
     <style>
@@ -28,39 +31,21 @@
             <div>
                 <div class="header__whole">
                     <div class="header__left">
-                        <a class="header__title" href="/">Rina Akaboshi</a>
+                        <a class="header__title" href="/">おといのちオンライン</a>
                     </div>
                     <div class="header__right">
                         <div class="header__menu">
-                            <a href="#biography">プロフィール</a>
-                            <a href="#concert">コンサート</a>
-                            <a href="#media">メディア</a>
-                            <a href="#recordings">CD</a>
-                            <a href="#contact">お問い合わせ</a>
+                            <a href="#biography" class="menu__biography">おとなかまコース</a>
+                            <a href="#concerts" class="menu__concerts">おとまなびコース</a>
+                            <a href="#media" class="menu__media">ご参加の流れ</a>
+                            <a href="#recordings" class="menu__recordings">オーナーの想い</a>
+                            <a href="#contact" class="menu__contact">注意事項</a>
                         </div>
-                        <div class="header__icon">
-                            <a href="https://www.instagram.com/akaboshi_rina/" class="instagram">
-                                <img src="/Instagram.svg" width="24" height="24" alt="instagram">
-                            </a>
-                            <a href="https://www.youtube.com/@akaboshirina" class="youtube">
-                                <img src="/YouTube.svg" width="33" height="33" alt="YouTube">
-                            </a>
-                        </div>
-                        <ul class="dropdown">
-                            <li class="dropdown__content">
-                                <a class="dropdown__menu__link">Japanese</a>
-                                <ul class="dropdown__menu">
-                                    <li class="dropdown__menu__item"><a href="index.html"
-                                            class="drop-menu__link">Japanese</a></li>
-                                    <li class="dropdown__menu__item"><a href="/english/indexen.html"
-                                            class="drop-menu__link">English</a></li>
-                                </ul>
-                            </li>
-                        </ul>
                         <div class="hamburger">
-                            <span class="hamburger__line hamburger__line--1"></span>
-                            <span class="hamburger__line hamburger__line--2"></span>
-                            <span class="hamburger__line hamburger__line--3"></span>
+                            <span>
+                                <img src="/photo/piano.svg" width="25" height="25" alt="piano">
+                            </span>
+                            <p class="piano-menu">menu</p>
                         </div>
                     </div>
                     <ul class="slide-menu">
@@ -75,16 +60,15 @@
         </nav>
         <main class="latest-information__main">
             <div class="latest-information">
-                <h2 class="latest-information__title">最新情報</h2>
                 <div class="latest-information__content">
                     <div>
                         <div class="latest-information__sentence">
-                            みんなの挑戦をあたたかく見守る場所“おといのち音楽会”開催決定
+                            メンタルトレーニング研究家 大木美穂先生による特別講座"　開講決定!!
                         </div>
                         <div class="latest-information__days">
-                            2023.08.01
+                            "2024.01.21"
                         </div>
-                        <img src="/photo/2023801.jpg" width=100%>
+                        <img src="" width=100%>
                     </div>
                     <hr class="while">
                     <div class="latest-information__detail">
@@ -113,15 +97,7 @@
             </div>
         </main>
         <div class="footer">
-            <div class="footer__content">
-                <a href="https://www.instagram.com/akaboshi_rina/">
-                    <img src="../Instagram.svg" class="footer__instagram" width="40" height="50" alt="twitter">
-                </a>
-                <a href="https://www.youtube.com/@akaboshirina">
-                    <img src="../YouTube.svg" class="footer__youtube" width="60" height="60" alt="YouTube">
-                </a>
-            </div>
-            <div class="lisence">© 2023 Rina Akaboshi</div>
+            <div class="lisence">© 2024 Rina Akaboshi</div>
         </div>
     </div>
 </body>
